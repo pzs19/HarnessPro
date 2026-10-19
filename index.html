@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#23283b" />
+    <meta
+      name="description"
+      content="HarnessPro recursively evolves AI agent harnesses to improve performance and reduce execution cost. Explore the method, benchmark results, and three deployment modes."
+    />
+    <meta
+      property="og:title"
+      content="HarnessPro — Better performance. Smarter budgets."
+    />
+    <meta
+      property="og:description"
+      content="Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pzs19.github.io/HarnessPro/" />
+    <meta
+      property="og:image"
+      content="https://pzs19.github.io/HarnessPro/assets/social-card.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>HarnessPro · Recursive Harness Self-Improvement</title>
+    <link rel="canonical" href="https://pzs19.github.io/HarnessPro/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-serif.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/results.js" defer></script>
+    <script src="assets/policies.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg
+      class="icon-library"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-mark" viewBox="0 0 32 32">
+        <path d="M8 22V10a6 6 0 0 1 12 0v12a4 4 0 0 0 8 0V10" />
+        <path d="M4 10v12a6 6 0 0 0 12 0V10a4 4 0 0 1 8 0v12" />
+        <circle cx="4" cy="10" r="2" />
+        <circle cx="28" cy="10" r="2" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 19 19 5M5 5h14v14" />
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 24 24">
+        <path
+          d="M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-3H4zM13 7a3 3 0 0 1 3-3h4v14h-3a4 4 0 0 0-4 3"
+        />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="m8 4 12 8-12 8z" />
+      </symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24">
+        <path d="M8 5v14M16 5v14" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <rect x="8" y="8" width="12" height="12" rx="2" />
+        <path d="M15 8V4H4v11h4" />
+      </symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24">
+        <path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M6 18 18 6" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </symbol>
+      <symbol id="i-loop" viewBox="0 0 24 24">
+        <path d="M20 9a8 8 0 1 0 0 6M20 3v6h-6" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="nav-shell container">
+        <a class="brand" href="#" aria-label="HarnessPro home"
+          ><span class="brand-mark"
+            ><svg><use href="#i-mark" /></svg></span
+          >Harness<span class="brand-pro">Pro</span></a
+        >
+        <button
+          class="menu-toggle icon-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <svg><use href="#i-menu" /></svg>
+        </button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a><a href="#method">Method</a
+          ><a href="#main-results">Results</a><a href="#evolution">Evolution</a
+          ><a href="#harnesses">Interactive demo</a>
+          <a
+            class="nav-paper"
+            href="https://arxiv.org/pdf/2610.26770"
+            target="_blank"
+            rel="noopener"
+            >Read the paper <svg><use href="#i-arrow" /></svg
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Recursive harness self-improvement
+          </p>
+          <h1 id="hero-title">
+            Harness<span>Pro</span><span class="title-period">.</span>
+          </h1>
+          <p class="hero-tagline">
+            Better performance.<br /><em>Smarter budgets.</em>
+          </p>
+          <p class="paper-title">
+            Recursive Harness Self-Improvement with Pareto Optimization for
+            Performance-Cost&nbsp;Trade-offs
+          </p>
+          <p class="hero-description">
+            Evolve the instructions, tools, and runtime policies around an AI
+            agent. Find the sweet spot between what it can solve and what it
+            costs.
+          </p>
+          <div class="resource-links" aria-label="Project resources">
+            <a
+              class="button button-primary"
+              href="https://arxiv.org/pdf/2610.26770"
+              target="_blank"
+              rel="noopener"
+              ><svg><use href="#i-book" /></svg> Read the paper
+              <svg class="button-arrow"><use href="#i-arrow" /></svg
+            ></a>
+            <a
+              class="button button-outline"
+              href="https://arxiv.org/abs/2610.26770"
+              target="_blank"
+              rel="noopener"
+              >arXiv</a
+            >
+            <a
+              class="button button-outline"
+              href="https://github.com/pzs19/HarnessPro"
+              target="_blank"
+              rel="noopener"
+              ><svg><use href="#i-code" /></svg> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-heading">
+            <span class="eyebrow">A better performance–cost frontier</span
+            ><span class="plot-live"><span></span> Reported results</span>
+          </div>
+          <div class="hero-selectors">
+            <label for="hero-benchmark"
+              ><span>Benchmark</span>
+              <select id="hero-benchmark">
+                <option value="tb2">Terminal-Bench 2</option>
+                <option value="swe">SWE-Bench Pro</option>
+                <option value="program">ProgramBench</option>
+              </select>
+            </label>
+            <label for="hero-model"
+              ><span>Model + agent</span>
+              <select id="hero-model">
+                <option value="gpt">GPT-5.5 × Codex</option>
+                <option value="glm">GLM-5.2 × Claude Code</option>
+              </select>
+            </label>
+          </div>
+          <div class="hero-chart-wrap">
+            <svg
+              id="hero-chart"
+              viewBox="0 0 570 360"
+              role="img"
+              aria-labelledby="hero-chart-title hero-chart-description"
+            >
+              <title id="hero-chart-title">
+                Terminal-Bench 2 performance and mean cost
+              </title>
+              <desc id="hero-chart-description">
+                With GPT-5.5 and Codex, HarnessPro’s Heavy mode achieves 80.8
+                percent pass rate at 0.72 dollars per task. RHO achieves 76.3
+                percent at 1.09 dollars. The chart also shows Vanilla and the
+                Lite and Medium modes.
+              </desc>
+            </svg>
+          </div>
+          <div class="hero-comparison" aria-live="polite" aria-atomic="true">
+            <span>Heavy mode vs. RHO</span>
+            <strong
+              ><span id="hero-pass-gain">+4.5</span
+              ><small> pp pass rate</small></strong
+            >
+            <strong
+              ><span id="hero-cost-saving">33.9</span
+              ><small>% lower cost</small></strong
+            >
+          </div>
+          <div class="hero-plot-footer">
+            <div>
+              <span class="plot-caption" id="hero-plot-caption"
+                >Terminal-Bench 2</span
+              ><span class="plot-model" id="hero-plot-model"
+                >GPT-5.5 × Codex</span
+              >
+            </div>
+            <div class="frontier-note">
+              <span class="frontier-direction">↖</span> Better is up and left
+            </div>
+          </div>
+          <a class="hero-results-link" href="#main-results"
+            >See the complete results <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+
+      <section class="impact-section" aria-label="Key findings">
+        <div class="impact-inner container">
+          <div class="impact-intro">
+            <span class="eyebrow">The outcome</span>
+            <p>A stronger agent.<br /><em>A smaller bill.</em></p>
+          </div>
+          <div class="impact-metric">
+            <div class="metric-number">+2.0<span>pp</span></div>
+            <p>Average pass-rate gain</p>
+          </div>
+          <div class="impact-metric">
+            <div class="metric-number">
+              26.1<span>%</span
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18m-7-7 7 7 7-7" />
+              </svg>
+            </div>
+            <p>Average cost&nbsp;reduction</p>
+          </div>
+          <p class="impact-context">
+            Heavy mode vs. RHO<br />
+            Across three benchmarks<br />
+            <strong>GPT-5.5 × Codex</strong>
+          </p>
+        </div>
+      </section>
+
+      <section id="overview" class="section overview-section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">01 / The idea</p>
+            <h2>The harness is part of the&nbsp;intelligence.</h2>
+          </div>
+          <p class="section-lead">
+            An agent’s capability depends on how it is guided, what tools it
+            has, and when it stops. HarnessPro improves that surrounding
+            software through execution feedback.
+          </p>
+        </div>
+        <div class="idea-grid">
+          <article>
+            <span class="idea-icon"
+              ><svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M5 6h22v20H5zM10 11h12M10 16h8M10 21h5" />
+                <path d="m23 19 4 4 4-4" /></svg
+            ></span>
+            <h3>Learn from the trajectory</h3>
+            <p>
+              Diagnose failed attempts, redundant checks, and expensive
+              exploration across multiple rollouts.
+            </p>
+          </article>
+          <article>
+            <span class="idea-icon"
+              ><svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 25 25 7M7 7h18v18" />
+                <path d="M7 16v9h9" />
+                <circle cx="16" cy="16" r="3" /></svg
+            ></span>
+            <h3>Optimize both&nbsp;objectives</h3>
+            <p>
+              Evaluate task performance and execution cost together. Keep
+              candidates that advance the Pareto&nbsp;frontier.
+            </p>
+          </article>
+          <article>
+            <span class="idea-icon"
+              ><svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M6 10h20M6 22h20M11 5v10m10 2v10" />
+                <circle cx="11" cy="10" r="3" />
+                <circle cx="21" cy="22" r="3" /></svg
+            ></span>
+            <h3>Choose your operating point</h3>
+            <p>
+              Retain cost-focused, balanced, and performance-focused harnesses
+              for different deployment budgets.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="method" class="section method-section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">02 / The method</p>
+            <h2>One loop.<br /><em>Three ways forward.</em></h2>
+          </div>
+          <p class="section-lead">
+            Specialized agents turn execution evidence into new harnesses. Each
+            round retains strong candidates for the next round of evolution.
+          </p>
+        </div>
+        <figure class="method-figure">
+          <div class="figure-toolbar">
+            <span class="eyebrow">The HarnessPro evolution loop</span
+            ><button class="text-button" id="expand-figure">
+              <svg><use href="#i-expand" /></svg> Enlarge figure
+            </button>
+          </div>
+          <img
+            src="assets/overview.png"
+            alt="HarnessPro workflow: collect parallel rollouts, diagnose trajectories, plan cost-focused, balanced and performance-focused updates, edit candidate harnesses, evaluate with generated tests, filter and select Pareto representatives, and repeat."
+            width="2048"
+            height="721"
+            loading="lazy"
+          />
+          <figcaption>
+            Model weights stay fixed. The harness evolves through trajectory
+            diagnosis, candidate generation, and test-based selection.
+          </figcaption>
+        </figure>
+        <div class="method-steps">
+          <article>
+            <span class="step-number">01</span>
+            <h3>Diagnose</h3>
+            <p>
+              The trajectory analyzer identifies failures and avoidable
+              computation, grounding its diagnoses in execution evidence.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">02</span>
+            <h3>Plan &amp; edit</h3>
+            <p>
+              The planner proposes updates with three performance–cost
+              priorities. The editor implements executable candidate harnesses.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">03</span>
+            <h3>Evaluate &amp; select</h3>
+            <p>
+              Fixed LLM-generated tests assess candidates. Pareto filtering and
+              weighted selection retain the Lite, Medium, and Heavy modes.
+            </p>
+          </article>
+        </div>
+        <div
+          class="evaluation-protocol"
+          aria-label="Label-free evaluation protocol"
+        >
+          <article>
+            <span class="protocol-stage">During evolution</span>
+            <h3>Learn with generated tests.</h3>
+            <p>
+              No ground-truth solutions, official tests, or official grader
+              feedback are used.
+            </p>
+          </article>
+          <article>
+            <span class="protocol-stage">After evolution</span>
+            <h3>Freeze, then evaluate.</h3>
+            <p>
+              The final harnesses are frozen before evaluation with the official
+              benchmark tests.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="main-results"
+        class="section main-results-section container"
+        aria-labelledby="main-results-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">03 / Main results</p>
+            <h2 id="main-results-title">
+              The complete picture.<br /><em>Across every&nbsp;benchmark.</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            Compare performance, cost, and task completion time for every method
+            reported in the paper. Both model–agent pairs are shown below.
+          </p>
+        </div>
+        <div class="benchmark-overview" aria-label="Benchmark coverage">
+          <article>
+            <span class="benchmark-number">01</span>
+            <div>
+              <h3>Terminal-Bench 2</h3>
+              <p>Tasks in a terminal environment.</p>
+              <span>59 test tasks · 10 evolution tasks</span>
+            </div>
+          </article>
+          <article>
+            <span class="benchmark-number">02</span>
+            <div>
+              <h3>SWE-Bench Pro</h3>
+              <p>Resolve issues in real code repositories.</p>
+              <span>100 test tasks · 10 evolution tasks</span>
+            </div>
+          </article>
+          <article>
+            <span class="benchmark-number">03</span>
+            <div>
+              <h3>ProgramBench</h3>
+              <p>Reconstruct programs from their behavior.</p>
+              <span>100 test tasks · 10 evolution tasks</span>
+            </div>
+          </article>
+        </div>
+        <div class="main-table-card">
+          <div class="main-table-toolbar">
+            <div class="table-title">
+              <span class="table-reference">Table 2</span>
+              <h3>Performance &amp; efficiency</h3>
+            </div>
+          </div>
+          <div
+            class="main-table-scroll"
+            role="region"
+            aria-label="Complete paper results for three benchmarks"
+            aria-describedby="main-table-note"
+          >
+            <table id="main-results-table">
+              <caption class="sr-only">
+                Paper Table 2. Performance and efficiency across three
+                benchmarks for GPT-5.5 with Codex and GLM-5.2 with Claude Code.
+              </caption>
+              <colgroup>
+                <col class="method-column" />
+              </colgroup>
+              <colgroup span="3"></colgroup>
+              <colgroup span="3"></colgroup>
+              <colgroup span="3"></colgroup>
+              <thead>
+                <tr>
+                  <th rowspan="2" scope="col">Method</th>
+                  <th colspan="3" scope="colgroup">Terminal-Bench 2</th>
+                  <th colspan="3" scope="colgroup">SWE-Bench Pro</th>
+                  <th colspan="3" scope="colgroup">ProgramBench</th>
+                </tr>
+                <tr>
+                  <th scope="col">P (%) <span>↑</span></th>
+                  <th scope="col">C ($) <span>↓</span></th>
+                  <th scope="col">T (s) <span>↓</span></th>
+                  <th scope="col">P (%) <span>↑</span></th>
+                  <th scope="col">C ($) <span>↓</span></th>
+                  <th scope="col">T (s) <span>↓</span></th>
+                  <th scope="col">P (%) <span>↑</span></th>
+                  <th scope="col">C ($) <span>↓</span></th>
+                  <th scope="col">T (s) <span>↓</span></th>
+                </tr>
+              </thead>
+              <tbody
+                id="main-results-gpt"
+                class="main-model-group"
+                data-model="gpt"
+              ></tbody>
+              <tbody
+                id="main-results-glm"
+                class="main-model-group"
+                data-model="glm"
+              ></tbody>
+            </table>
+          </div>
+          <div class="main-table-mobile" id="main-results-mobile"></div>
+          <div class="main-table-footnotes" id="main-table-note">
+            <p>
+              <strong>P</strong> = pass rate. <strong>C</strong> = mean cost per
+              task. <strong>T</strong> = mean task completion time.
+              <strong>Bold</strong> marks the best mean in each column within a
+              model–agent pair.
+            </p>
+            <p>
+              HarnessPro reports mean ± sample standard deviation over three
+              test runs on Terminal-Bench 2 and SWE-Bench Pro, and two on
+              ProgramBench. ProgramBench pass rate is the macro-average fraction
+              of test cases passed per task. Latency is reported for comparison
+              and is not an optimization objective.
+            </p>
+          </div>
+        </div>
+        <div class="result-takeaways">
+          <article>
+            <span class="takeaway-label heavy-label"
+              >Heavy mode / Performance</span
+            >
+            <h3>Higher pass rates, lower cost.</h3>
+            <p>
+              Heavy mode has the highest pass rate in all six benchmark–model
+              comparisons, with lower mean cost than RHO in every case.
+            </p>
+          </article>
+          <article>
+            <span class="takeaway-label medium-label"
+              >Medium mode / Balance</span
+            >
+            <h3>53.0% less per task.</h3>
+            <p>
+              On SWE-Bench Pro with GPT-5.5 and Codex, Medium mode reaches 79.0%
+              pass rate at $1.26 per task, compared with RHO’s 80.0% at $2.68.
+            </p>
+          </article>
+          <article>
+            <span class="takeaway-label lite-label">Lite mode / Cost</span>
+            <h3>A smaller budget goes further.</h3>
+            <p>
+              On Terminal-Bench 2 with GPT-5.5 and Codex, Lite mode costs $0.43
+              per task versus Vanilla’s $0.89, while pass rate rises from 69.5%
+              to 72.9%.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="evolution"
+        class="section evolution-section container"
+        aria-labelledby="evolution-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">04 / Recursive improvement</p>
+            <h2 id="evolution-title">
+              Better with<br /><em>each round of&nbsp;evolution.</em>
+            </h2>
+          </div>
+          <p class="section-lead">
+            A harness improves over multiple rounds of diagnosis, editing, and
+            selection. These curves from the paper track performance and cost
+            across epochs with GPT-5.5 and Codex.
+          </p>
+        </div>
+        <div class="evolution-grid">
+          <figure>
+            <div class="evolution-card-heading">
+              <h3>Terminal-Bench 2</h3>
+              <span>3 epochs</span>
+            </div>
+            <a
+              href="assets/evolution-tb2.svg"
+              data-enlarge-figure
+              target="_blank"
+              rel="noopener"
+              aria-label="Enlarge Terminal-Bench 2 evolution figure"
+              ><img
+                src="assets/evolution-tb2.svg"
+                width="1042"
+                height="785"
+                alt="Terminal-Bench 2 pass rate versus cost for the harnesses retained across three evolution epochs, with baseline methods shown as diamonds."
+                loading="lazy"
+              /><span class="figure-zoom-label">Enlarge figure ↗</span></a
+            >
+            <figcaption>
+              Heavy mode improves from 74.6% at $0.91 in epoch 1 to 80.8% at
+              $0.72 in epoch 3.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="evolution-card-heading">
+              <h3>SWE-Bench Pro</h3>
+              <span>3 epochs</span>
+            </div>
+            <a
+              href="assets/evolution-swe.svg"
+              data-enlarge-figure
+              target="_blank"
+              rel="noopener"
+              aria-label="Enlarge SWE-Bench Pro evolution figure"
+              ><img
+                src="assets/evolution-swe.svg"
+                width="1042"
+                height="785"
+                alt="SWE-Bench Pro pass rate versus cost across three evolution epochs, showing the final epoch improving the performance and cost trade-off."
+                loading="lazy"
+              /><span class="figure-zoom-label">Enlarge figure ↗</span></a
+            >
+            <figcaption>
+              From epoch 2 to 3, Medium mode rises from 77.0% to 79.0% while
+              cost falls from $1.66 to $1.26.
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="evolution-card-heading">
+              <h3>ProgramBench</h3>
+              <span>4 epochs</span>
+            </div>
+            <a
+              href="assets/evolution-program.svg"
+              data-enlarge-figure
+              target="_blank"
+              rel="noopener"
+              aria-label="Enlarge ProgramBench evolution figure"
+              ><img
+                src="assets/evolution-program.svg"
+                width="1042"
+                height="785"
+                alt="ProgramBench macro-average pass rate versus cost across four evolution epochs, with lower final-epoch costs across all three deployment modes."
+                loading="lazy"
+              /><span class="figure-zoom-label">Enlarge figure ↗</span></a
+            >
+            <figcaption>
+              A fourth epoch reduces cost across all three modes while
+              maintaining similar pass rates.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="evolution-legend">
+          <span><i class="epoch-point"></i>Retained harnesses</span
+          ><span
+            ><i class="epoch-connection"></i>Harnesses from the same epoch</span
+          ><span><i class="epoch-baseline"></i>Baseline methods</span>
+        </div>
+      </section>
+
+      <section id="harnesses" class="runtime-section">
+        <div class="container runtime-grid">
+          <div class="runtime-copy">
+            <p class="eyebrow section-index">05 / Inside an evolved harness</p>
+            <h2>
+              Explore.<br />Converge.<br /><em>Know when to&nbsp;stop.</em>
+            </h2>
+            <p>
+              Evolved harnesses route tasks to an execution profile. Runtime
+              hooks guide tool use as the assigned budget is consumed.
+            </p>
+            <div
+              class="runtime-modes"
+              role="group"
+              aria-label="Walkthrough mode"
+            >
+              <button data-runtime-mode="lite" aria-pressed="false">
+                Lite mode</button
+              ><button data-runtime-mode="medium" aria-pressed="true">
+                Medium mode</button
+              ><button data-runtime-mode="heavy" aria-pressed="false">
+                Heavy mode
+              </button>
+            </div>
+            <p class="runtime-caption">
+              Try a mode, choose a task profile, then play the walkthrough or
+              drag the tool-call slider.
+            </p>
+          </div>
+          <div class="runtime-demo">
+            <div class="demo-topbar">
+              <span class="window-dots"><i></i><i></i><i></i></span
+              ><span>Terminal-Bench 2 · GPT-5.5 / Codex</span
+              ><span class="demo-label">Policy walkthrough</span>
+            </div>
+            <div class="demo-body">
+              <div class="profile-row">
+                <label for="profile-select"
+                  ><span class="eyebrow">Execution profile</span
+                  ><select id="profile-select">
+                    <option value="compact">Compact</option>
+                    <option value="lean">Lean</option>
+                    <option value="standard" selected>Standard</option>
+                    <option value="deep">Deep</option>
+                    <option value="research">Research</option>
+                  </select></label
+                >
+                <div class="effort-label">
+                  <span class="eyebrow">Reasoning effort</span
+                  ><span id="reasoning-effort">medium</span>
+                </div>
+              </div>
+              <div class="call-counter">
+                <div>
+                  <span class="eyebrow">Tool-call attempts</span>
+                  <p>
+                    <span id="tool-count">00</span
+                    ><span class="counter-total">
+                      / <span id="tool-limit">44</span></span
+                    >
+                  </p>
+                </div>
+                <button
+                  id="play-walkthrough"
+                  class="play-button"
+                  aria-label="Play policy walkthrough"
+                >
+                  <svg><use href="#i-play" /></svg><span>Play</span>
+                </button>
+              </div>
+              <label class="sr-only" for="tool-slider">Tool-call attempts</label
+              ><input
+                id="tool-slider"
+                class="tool-slider"
+                type="range"
+                min="0"
+                max="45"
+                value="0"
+                step="1"
+                aria-describedby="budget-note"
+              />
+              <div class="budget-labels">
+                <span>Start</span><span id="economy-tick">Economy · 14</span
+                ><span id="strict-tick">Converge · 26</span
+                ><span id="final-tick">Limit · 44</span>
+              </div>
+              <div class="hook-output" id="hook-output">
+                <div class="hook-state">
+                  <span id="stage-dot"></span
+                  ><span id="stage-name">Explore</span
+                  ><span class="hook-summary-label"
+                    >Hook behavior · summary</span
+                  >
+                </div>
+                <p id="stage-description">
+                  Work on the task with the selected reasoning effort. Gather
+                  the evidence needed for an effective solution.
+                </p>
+              </div>
+              <div class="policy-fields">
+                <div>
+                  <span>economy_after_tools</span
+                  ><strong id="economy-value">14</strong>
+                </div>
+                <div>
+                  <span>strict_after_tools</span
+                  ><strong id="strict-value">26</strong>
+                </div>
+                <div>
+                  <span>finalize_after_tools</span
+                  ><strong id="final-value">44</strong>
+                </div>
+              </div>
+              <p id="budget-note" class="budget-note">
+                Simulated progression using the frozen harness settings. The
+                hook blocks attempts beyond the tool-call limit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="takeaway-section container">
+        <span class="takeaway-mark" aria-hidden="true"
+          ><svg><use href="#i-mark" /></svg
+        ></span>
+        <p>Better agents don’t always<br />need <em>bigger budgets.</em></p>
+        <a
+          class="button button-primary"
+          href="https://arxiv.org/pdf/2610.26770"
+          target="_blank"
+          rel="noopener"
+          >Explore the paper <svg><use href="#i-arrow" /></svg
+        ></a>
+      </section>
+
+      <section id="citation" class="citation-section container">
+        <div>
+          <p class="eyebrow section-index">Keep in touch with the work</p>
+          <h2>Cite HarnessPro.</h2>
+          <p>Cite the arXiv preprint. The source code is available on GitHub.</p>
+        </div>
+        <div class="citation-block">
+          <div class="citation-toolbar">
+            <span class="eyebrow">BibTeX</span
+            ><button class="text-button" id="copy-citation">
+              <svg><use href="#i-copy" /></svg
+              ><span>Copy citation</span></button
+            ><span id="copy-status" class="sr-only" role="status"></span>
+          </div>
+          <pre
+            tabindex="0"
+            aria-label="BibTeX citation"
+          ><code id="bibtex">@misc{pan2026harnesspro,
+  title  = {HarnessPro: Recursive Harness Self-Improvement
+            with Pareto Optimization for
+            Performance-Cost Trade-offs},
+  author = {Zhuoshi Pan and ZhiYuan Feng and Yukuo Cen
+            and Honglin Lin and Junru Lu and Zhongxia Chen
+            and Shuo Yang and H. Vicky Zhao and Jie Tang},
+  year   = {2026},
+  eprint = {2610.26770},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url    = {https://arxiv.org/abs/2610.26770}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer container">
+      <a class="brand" href="#"
+        ><span class="brand-mark"
+          ><svg><use href="#i-mark" /></svg></span
+        >Harness<span class="brand-pro">Pro</span></a
+      ><span>Recursive improvement. Thoughtful computation.</span
+      ><a href="#main">Back to top ↑</a>
+    </footer>
+    <dialog id="figure-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-toolbar">
+        <h2 id="dialog-title">The HarnessPro evolution loop</h2>
+        <button class="icon-button" id="close-figure" aria-label="Close figure">
+          <svg><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <img
+        src="assets/overview.png"
+        alt="Enlarged HarnessPro evolution workflow"
+        width="2048"
+        height="721"
+      />
+    </dialog>
+  </body>
+</html>
