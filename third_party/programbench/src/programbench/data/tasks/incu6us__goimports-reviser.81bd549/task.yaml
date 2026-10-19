@@ -1,0 +1,6 @@
+repository: incu6us/goimports-reviser
+commit: 81bd549469092e668525e6845bfa1ae9ee3cc4a2
+language: go
+difficulty: medium
+eval_clean_hashes:
+- d9a660ef333c4df431b8d329a755cc886566484c1705c6cbe0d249ec9f685bb9

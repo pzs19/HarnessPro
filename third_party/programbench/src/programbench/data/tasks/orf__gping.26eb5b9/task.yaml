@@ -1,0 +1,6 @@
+repository: orf/gping
+commit: 26eb5b914b1d90d75ebf23c3a9ae8ee3ebd6f217
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 53fdb9ecac67dacba76d1bcdf8bf7f71d7d0e91ac7c4f73721904049fb650291

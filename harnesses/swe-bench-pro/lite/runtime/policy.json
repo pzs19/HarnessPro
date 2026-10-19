@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "default_profile": "standard",
+  "session_context": "The repair workflow is already loaded; do not spend tool calls inventorying harness/. First establish the repository root under task/ and keep later commands rooted there. Read task/prompt.md as a contract and keep a concise ledger of exact public names, files, payloads, defaults, error behavior, compatibility requirements, and stated edge cases. Inspect the local implementation and nearby tests first. Look for an existing reference when the task sounds like a known fix: local Git history, tags, upstream commits, tests, fixtures, or nearby implementation patterns. Prefer adapting proven behavior over guessing. Trace the real execution and data path before editing, then make the smallest production-source change that satisfies the contract. Start with narrow discriminating probes, batch independent reads and searches, and avoid unchanged rereads. Reserve enough budget for a post-change task-shaped test, investigation of any concrete failure, and one final diff/contract review; compilation alone is insufficient. Use harness/bin/repair-verify only when its general checks are useful. Keep generated files, caches, and temporary tests out of the final patch. Before finishing, inspect the diff and re-check every ledger item. Preserve unrelated behavior and do not replace requested behavior with a mock, proxy, or look-alike implementation.",
+  "codex": {
+    "model_instructions_file": "model_instructions.md",
+    "model_verbosity": "low",
+    "disabled_features": [
+      "apps",
+      "auth_elicitation",
+      "browser_use",
+      "browser_use_external",
+      "browser_use_full_cdp_access",
+      "computer_use",
+      "fast_mode",
+      "goals",
+      "image_generation",
+      "in_app_browser",
+      "multi_agent",
+      "personality",
+      "plugins",
+      "remote_plugin",
+      "shell_snapshot",
+      "skill_mcp_dependency_install",
+      "tool_call_mcp_elicitation",
+      "tool_suggest",
+      "workspace_dependencies"
+    ]
+  },
+  "tool_output": {
+    "history_token_limit": 900,
+    "max_chars": 4200,
+    "head_chars": 2500,
+    "tail_chars": 900,
+    "rtk_enabled": true
+  },
+  "profiles": {
+    "compact": {
+      "reasoning_effort": "low",
+      "economy_after_tools": 4,
+      "strict_after_tools": 10,
+      "finalize_after_tools": 20,
+      "strict_reminder_every": 4
+    },
+    "lean": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 8,
+      "strict_after_tools": 17,
+      "finalize_after_tools": 28,
+      "strict_reminder_every": 4
+    },
+    "standard": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 12,
+      "strict_after_tools": 26,
+      "finalize_after_tools": 40,
+      "strict_reminder_every": 6
+    },
+    "deep": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 16,
+      "strict_after_tools": 32,
+      "finalize_after_tools": 48,
+      "strict_reminder_every": 6
+    },
+    "research": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 12,
+      "strict_after_tools": 25,
+      "finalize_after_tools": 40,
+      "strict_reminder_every": 6
+    }
+  },
+  "classifier": {
+    "type": "model",
+    "model": "gpt-5.5",
+    "reasoning_effort": "medium",
+    "fallback_profile": "standard",
+    "rubric_file": "profile_rubric.md",
+    "timeout_s": 120,
+    "max_attempts": 3,
+    "max_task_chars": 24000
+  },
+  "confidence_overrides": [],
+  "rules": []
+}

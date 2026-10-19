@@ -1,0 +1,6 @@
+repository: sstadick/hck
+commit: b66c751215d9cbaaabf94827cb9e8e6b9e6b96a4
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- de16846838a2842a14f68ec9368237d4c5402eb9875bf4f535d9b2d1ffed71b4

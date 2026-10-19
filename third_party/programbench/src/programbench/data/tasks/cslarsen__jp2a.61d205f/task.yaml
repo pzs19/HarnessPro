@@ -1,0 +1,6 @@
+repository: cslarsen/jp2a
+commit: 61d205f6959d88e0cc8d8879fe7d66eb0932ecca
+language: c
+difficulty: easy
+eval_clean_hashes:
+- 9ce1474cc1880d4cda602b823909c5edfd99ffcaa9eb4bca98115d89494a9e6f

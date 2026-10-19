@@ -1,0 +1,6 @@
+repository: ismaelgv/rnr
+commit: fc0733ba070e8e91565d7868757e0f753ff7bf92
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f08a1d9590ebc2710b86a22c3ea294272464acf53003d96911b6209f984d87aa

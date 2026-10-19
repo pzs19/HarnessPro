@@ -1,0 +1,6 @@
+repository: madler/pigz
+commit: fe4894f57739e3039a2ffc2a2a360d35e19bacbe
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 59fdb11c46c826db6b45778a38dcc2669a78ed9cc1932c4543f7ca43a322fda7

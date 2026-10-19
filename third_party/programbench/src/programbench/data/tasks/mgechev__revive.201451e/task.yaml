@@ -1,0 +1,6 @@
+repository: mgechev/revive
+commit: 201451e758d28b9511871de5c0e12b86d187fb07
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 7307244b0aac6830bab64879f6d2cdb764f4dc78c50b7df78683890474e30771

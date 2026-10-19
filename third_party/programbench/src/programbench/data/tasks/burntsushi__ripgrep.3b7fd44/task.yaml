@@ -1,0 +1,6 @@
+repository: BurntSushi/ripgrep
+commit: 3b7fd442a6f3aa73f650e763d7cbb902c03d700e
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 18b4d1ed66746d5cb6a7efaf634e53434844eb4acbba20492445d55c6b344559

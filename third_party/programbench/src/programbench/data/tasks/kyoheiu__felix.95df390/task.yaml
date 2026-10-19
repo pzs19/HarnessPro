@@ -1,0 +1,6 @@
+repository: kyoheiu/felix
+commit: 95df390d883c5bd709ffb252249e78af2082d5a3
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 4c2d80b1e22f8279346a8591f448547e7aab315983eb7678b651d1e3110068d1

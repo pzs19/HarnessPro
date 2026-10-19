@@ -1,0 +1,6 @@
+repository: hatoo/oha
+commit: 8dc63499f84b3116652987dac711eca687ccc2fd
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e0fe009f008ab9e9a5fc5b7ac2b0c05cc882c55a5ce1004ed321c503f1a3a523

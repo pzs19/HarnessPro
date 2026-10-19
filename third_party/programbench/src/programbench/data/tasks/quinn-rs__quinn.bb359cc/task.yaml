@@ -1,0 +1,6 @@
+repository: quinn-rs/quinn
+commit: bb359ccd7dfbc18b472bcb61e6800be6dc886264
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 5ab26ed8f825e607dc54acb80ababf567841d4f4c97fb6f400a896ac432bc340

@@ -1,0 +1,6 @@
+repository: sharkdp/pastel
+commit: b60e89932629b2d162e1ff9f3976a5a0ef1e5db9
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 858706582e9d30e509bca337e47257daac1c44cd1e0e1d4a422097d09bcca183

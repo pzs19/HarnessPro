@@ -1,0 +1,6 @@
+repository: rs/jplot
+commit: 2a54bccf26d9cb644ec987994123cf20683fa75b
+language: go
+difficulty: easy
+eval_clean_hashes:
+- ca593bbd96c07526d5d59ea58d4953f302b3f6b061f4042c5c05458dbaed33ba

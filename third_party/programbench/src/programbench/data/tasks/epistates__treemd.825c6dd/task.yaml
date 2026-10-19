@@ -1,0 +1,6 @@
+repository: Epistates/treemd
+commit: 825c6ddc5cbe71d52252107abeff570ab97e0ca0
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 789a522be781ab22e230304cece5ce356e7369b876f7b57682639c6a6a7d42b1

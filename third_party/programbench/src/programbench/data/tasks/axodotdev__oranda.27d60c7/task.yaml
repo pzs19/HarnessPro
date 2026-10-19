@@ -1,0 +1,6 @@
+repository: axodotdev/oranda
+commit: 27d60c78f8f73c1f2124b42caab4cea7232a2c37
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- eeb2b26ba13333d2bd99f101649e3a25dbbfc986e553f3beef22da4277b59fe9

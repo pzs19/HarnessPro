@@ -1,0 +1,6 @@
+repository: wfxr/csview
+commit: 8ac4de0ae4540461fd9e33c13e4b47ba21967995
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- e07420f640d1e6a0c047cab49431d1b561f661241efe111a053ff5dde1119d09

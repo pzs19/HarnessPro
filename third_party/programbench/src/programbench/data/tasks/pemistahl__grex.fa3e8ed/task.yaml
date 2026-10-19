@@ -1,0 +1,6 @@
+repository: pemistahl/grex
+commit: fa3e8ed71c43ea92f9f0e43ab31e1c82d006d5dd
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- ad96801fa83cdf1d1bf8565d75d3c455de6c74de9feef81b1841805ed47b30d3

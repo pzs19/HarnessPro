@@ -1,0 +1,6 @@
+repository: sharkdp/hexyl
+commit: 2e2643782d6ced9b5ac75596169a79127d8e535a
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- a6fc6dcc471bfaf4ff37a24a810023dfeefa9c0652a07e4efdcdad2b404b776e

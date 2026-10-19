@@ -1,0 +1,6 @@
+repository: AmmarAbouZor/tui-journal
+commit: 2b4540d10c57ca8364fb59be0dce1c4cb9c65326
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 54ce16f94b2370b44274b080b5ef1f6f7116f71b00e1f8d7084c9e921dca9eb9

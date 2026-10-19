@@ -1,0 +1,6 @@
+repository: guumaster/hostctl
+commit: d6d96999f81952fa8d2ea3121ae5e3cce08afed6
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 2d3c78fb64b6291fab22a5bc5f31d4d4142fa12dc7ed843b2ae8decbb1413d70

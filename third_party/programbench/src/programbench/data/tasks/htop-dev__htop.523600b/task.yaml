@@ -1,0 +1,6 @@
+repository: htop-dev/htop
+commit: 523600b069d86ce3aea42a627ba9fa0f9c2fcd27
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 3bccdc16b5be8d734ffe88dba5ac9e861c6a8923d7434d9cd250719766db4a5d

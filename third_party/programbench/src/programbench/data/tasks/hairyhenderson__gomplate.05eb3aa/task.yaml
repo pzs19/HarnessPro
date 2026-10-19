@@ -1,0 +1,6 @@
+repository: hairyhenderson/gomplate
+commit: 05eb3aa726779c2b00abca9cae8d0300d318e566
+language: go
+difficulty: hard
+eval_clean_hashes:
+- 71b500dde3c8f0c3a535145ef664ae795fd37f8f49992f9e4ba8a4dd30981b15

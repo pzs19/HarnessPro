@@ -1,0 +1,6 @@
+repository: psampaz/go-mod-outdated
+commit: bb79367d102a05221196613dde574f1a0b81b556
+language: go
+difficulty: easy
+eval_clean_hashes:
+- 3654bb785bf8cb76a99eb5233b5c8051699497df924df1c75ac8adbcbe6de929

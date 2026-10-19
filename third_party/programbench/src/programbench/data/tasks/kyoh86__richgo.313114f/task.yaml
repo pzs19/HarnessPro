@@ -1,0 +1,6 @@
+repository: kyoh86/richgo
+commit: 313114fd66b78483c1a94d63d27df70df70b5b2a
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 74da9ab38dfac9f39cd9300aceee1d0dffcaffc6347dcb0aa6b797ca6d958279

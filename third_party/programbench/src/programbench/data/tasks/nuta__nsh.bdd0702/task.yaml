@@ -1,0 +1,6 @@
+repository: nuta/nsh
+commit: bdd07024661dfa503b248ae46c363783d12fbad1
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- ab3d07a2de6f7362ee34e0e9add770fa9a87188bad1c8cfdb6007b4ff6c91f05

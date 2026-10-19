@@ -1,0 +1,6 @@
+repository: oppiliappan/eva
+commit: 41ae2455085c10978c5d93be4e6b139682396eb0
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 24db5a04697d6be1afc7edde56b1b9116a70bb0fe81140a702e11ee53be39f1f

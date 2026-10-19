@@ -1,0 +1,6 @@
+repository: Lymphatus/caesium-clt
+commit: a529b2e31c5e0714131e33869c54ecaa4b18d910
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e2f1ab17093ca82a561dcad9060736510f4782c8ffd7bb2b111ef0daf91896d3

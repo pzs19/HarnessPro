@@ -1,0 +1,6 @@
+repository: naggie/dstask
+commit: ff573962eb5f7feab5e32df1399954d7deb4c17b
+language: go
+difficulty: medium
+eval_clean_hashes:
+- c4620cf024a7d6f9842a4edece55e8680985bff3829dc8895e8f76d70b85423f

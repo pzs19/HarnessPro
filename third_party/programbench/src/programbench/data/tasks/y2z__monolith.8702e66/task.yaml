@@ -1,0 +1,6 @@
+repository: Y2Z/monolith
+commit: 8702e66fed5bb1b377d6c733f8aff3cdfa9b8dc3
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- ea2545497bfff14bd17f5d7569c0bd1edc4fc9cfa2817100ed518cc54f18f8bf

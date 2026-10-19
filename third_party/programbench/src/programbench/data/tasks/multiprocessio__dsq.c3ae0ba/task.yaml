@@ -1,0 +1,6 @@
+repository: multiprocessio/dsq
+commit: c3ae0bafb0c3283e3c98cb250ada5a19e79ad58e
+language: go
+difficulty: easy
+eval_clean_hashes:
+- 77230db960a916339b1db750631531c1cb165883b5cd7b705a8fa4c2cce33522

@@ -1,0 +1,6 @@
+repository: alexpovel/srgn
+commit: 89f943bb77bad6bc9644b679c0e5c2450bbea970
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 39d22e6f2c980e29d098488968b81c5ae5a93b395854bf9eee646cb416ab0538

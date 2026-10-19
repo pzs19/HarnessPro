@@ -1,0 +1,6 @@
+repository: doxygen/doxygen
+commit: 966d98e54491461ecd27b7427caa360006d8fa59
+language: c
+difficulty: hard
+eval_clean_hashes:
+- 925c9583aa3897a5034869549b3665115746101e785a29a651bad965c01fda3b

@@ -1,0 +1,6 @@
+repository: paradigmxyz/solar
+commit: 5190d0eae411ef7592a98d4bc023aaab541a2575
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 37318aed4a0717fc1787ce4300e11de178d2911c92cd8280fefa290dbf2e3a12

@@ -1,0 +1,6 @@
+repository: mfridman/tparse
+commit: 2416b4b7d31e49fa2f25a3ea435eaa97f0e3b9d6
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 45d4c1e593b02ebef000be4d4918c32dc5f20b6b2b69f5c7f13ba7d222d1a24a

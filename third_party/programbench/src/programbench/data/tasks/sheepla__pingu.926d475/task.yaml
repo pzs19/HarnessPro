@@ -1,0 +1,6 @@
+repository: sheepla/pingu
+commit: 926d475bda0fb27987e314cd9451c3e60976e643
+language: go
+difficulty: easy
+eval_clean_hashes:
+- b026b858ac00b536533528deaa9ee186801a32736e2b9d3b0cd3ce3d8f3dbb42

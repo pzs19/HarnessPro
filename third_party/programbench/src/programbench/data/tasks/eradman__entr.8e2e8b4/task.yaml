@@ -1,0 +1,6 @@
+repository: eradman/entr
+commit: 8e2e8b413a491ae74807220ac1a21ad1f5566d61
+language: c
+difficulty: easy
+eval_clean_hashes:
+- 9ae8cf6abf4e5cb8ccbc4d5981401da7b760d6d58cfd0827deea9d624edc3d82

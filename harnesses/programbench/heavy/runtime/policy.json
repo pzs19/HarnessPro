@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "default_profile": "heavy",
+  "session_context": "Follow the reconstruction workflow: read bundled documentation, preserve the reference for permitted black-box comparisons, build an independent implementation, and reserve time for an offline rebuild and end-to-end validation.",
+  "codex": {
+    "model_instructions_file": "model_instructions.md", "model_verbosity": "low",
+    "disabled_features": ["apps", "auth_elicitation", "browser_use", "browser_use_external", "browser_use_full_cdp_access", "computer_use", "fast_mode", "goals", "image_generation", "in_app_browser", "multi_agent", "personality", "plugins", "remote_plugin", "shell_snapshot", "skill_mcp_dependency_install", "tool_call_mcp_elicitation", "tool_suggest", "workspace_dependencies"]
+  },
+  "tool_output": {"history_token_limit": 3000, "max_chars": 4500, "head_chars": 2700, "tail_chars": 1100, "rtk_enabled": false},
+  "profiles": {"heavy": {"reasoning_effort": "high", "economy_after_tools": 36, "strict_after_tools": 60, "finalize_after_tools": 76, "strict_reminder_every": 8}},
+  "rules": []
+}

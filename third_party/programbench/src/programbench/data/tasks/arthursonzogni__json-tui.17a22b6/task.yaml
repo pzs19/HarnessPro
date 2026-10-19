@@ -1,0 +1,6 @@
+repository: ArthurSonzogni/json-tui
+commit: 17a22b6720878df9ab16834fb254308da4ae04af
+language: cpp
+difficulty: easy
+eval_clean_hashes:
+- 4349db9afad22577dac9848f201b520838a1ffd602ed68f02d24a2551e58aaff

@@ -1,0 +1,6 @@
+repository: facebook/zstd
+commit: 1168da0e567960d50cba1b58c9b0ba047ece4733
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 4cc94b4501a84234524f4353ae394ac3dbb80b997e6e6144e9666b07a7bc485c

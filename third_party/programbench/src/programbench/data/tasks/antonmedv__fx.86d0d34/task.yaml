@@ -1,0 +1,6 @@
+repository: antonmedv/fx
+commit: 86d0d344b4c2c322ee197d26766e592d030b94a4
+language: go
+difficulty: medium
+eval_clean_hashes:
+- dc56432225fae7b9befca1e8e781ab52cd700eb9404a31d0cf351324025f2587

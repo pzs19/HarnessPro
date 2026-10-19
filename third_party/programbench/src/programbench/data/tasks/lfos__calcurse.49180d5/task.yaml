@@ -1,0 +1,6 @@
+repository: lfos/calcurse
+commit: 49180d5537edb53ccd0d784a782e32816750323a
+language: c
+difficulty: medium
+eval_clean_hashes:
+- bffc523c9f38258c077a8959f179269710378cd45cea55c77c8a46a889db6912

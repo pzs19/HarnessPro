@@ -1,0 +1,6 @@
+repository: yaa110/nomino
+commit: f892499a81cdc49e696c83ab13c231fed2fced6d
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 824a5a0a983facff7bb8684cd278473875654c70dd32c022ae0e901a46ed0d4d

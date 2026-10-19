@@ -1,0 +1,6 @@
+repository: tree-sitter/tree-sitter
+commit: 5e23ccaac2265f85e4ca2ebf4b67ec4be57d0f16
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 4a800e7f990b77c69d1cabcba1417cd4c256d70420091c81825a0201bcc96a77

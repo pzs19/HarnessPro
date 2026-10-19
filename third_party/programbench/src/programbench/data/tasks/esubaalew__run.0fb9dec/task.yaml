@@ -1,0 +1,6 @@
+repository: Esubaalew/run
+commit: 0fb9dec5f5ab862ec7edf13f5b5ccf0cc87f3a79
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 4355a3374ea9851541d1a1e0370de158cceb8d973094b79463d9a4b822ab9fe8

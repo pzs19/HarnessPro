@@ -1,0 +1,6 @@
+repository: dandavison/delta
+commit: acd758f7a08df6c2ac5542a2c5a4034c664a9ed8
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 2140df34c5cb9397afd019e7ad100535c0c15182845e65095d13cc4bb6987a3f

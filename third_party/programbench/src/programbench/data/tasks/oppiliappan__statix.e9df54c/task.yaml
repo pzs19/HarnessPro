@@ -1,0 +1,6 @@
+repository: oppiliappan/statix
+commit: e9df54ce918457f151d2e71993edeca1a7af0132
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 446df25ba1c96de6591972df8aa82aeff7c9f701a60d532afcec37964a15d5e0

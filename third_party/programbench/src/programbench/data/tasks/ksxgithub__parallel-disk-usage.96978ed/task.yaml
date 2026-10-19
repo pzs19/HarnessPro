@@ -1,0 +1,6 @@
+repository: KSXGitHub/parallel-disk-usage
+commit: 96978ed19a4506237553af2a14cffd7ca01cc121
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- fdc96130c94781485de07488273cadd5351977d8518e1f1390677633b6cd1c86

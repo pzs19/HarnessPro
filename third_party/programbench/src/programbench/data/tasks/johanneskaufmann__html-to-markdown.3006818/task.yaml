@@ -1,0 +1,6 @@
+repository: JohannesKaufmann/html-to-markdown
+commit: 3006818b20a61b0a36eb86321aef57d3d017c27e
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 2255b718c18c5e12f490a6bb66eb920122a3988f60cbd657b0468792cdf427ae

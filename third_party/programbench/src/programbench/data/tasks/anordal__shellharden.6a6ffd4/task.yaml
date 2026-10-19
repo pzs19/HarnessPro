@@ -1,0 +1,6 @@
+repository: anordal/shellharden
+commit: 6a6ffd42f6a9d8b558d479346d09233ae5e7a2ae
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- 7dde8c764cae64898dc97d9db84940a28db0732822da8fc87689bb896a155736

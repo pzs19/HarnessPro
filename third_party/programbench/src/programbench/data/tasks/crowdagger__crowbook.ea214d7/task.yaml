@@ -1,0 +1,6 @@
+repository: crowdagger/crowbook
+commit: ea214d75469357d305594e879124c57af9843849
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 30fe43c188f080026577d2fa935ebf33f0b902077bb2138724f839680eb45944

@@ -1,0 +1,6 @@
+repository: chmln/handlr
+commit: 90e78ba92d0355cb523abf268858f3123fd81238
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 6d2707b87a38192b63777f648b1d6dcfba9a5562f30309043cd2e2a79aea1c68

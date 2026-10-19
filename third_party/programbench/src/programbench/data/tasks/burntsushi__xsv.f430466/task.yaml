@@ -1,0 +1,6 @@
+repository: BurntSushi/xsv
+commit: f4304660231d7907798e831411871d2679d335c3
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- dd7cf0aa19bf5aeb10996e93f02a654e92a36309096f9102f40bc226843a816a

@@ -1,0 +1,6 @@
+repository: ninja-build/ninja
+commit: cc60300ab94dae9bb28fece3c9b7c397235b17de
+language: cpp
+difficulty: medium
+eval_clean_hashes:
+- 7e0cae3e0b2592359f4ebd2018cea7d4c0707d6ec4ecc718df8872a468750b9e

@@ -1,0 +1,6 @@
+repository: astaxie/bat
+commit: 17d108071a533d01ce6a8450c0e5b41a2f8405bb
+language: go
+difficulty: easy
+eval_clean_hashes:
+- 786f4dc11f5ae09d90b2ff4a3ac96cabeab0954b196e7ebfe752afcc53245185

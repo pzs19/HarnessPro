@@ -1,0 +1,6 @@
+repository: agourlay/zip-password-finder
+commit: 704700d16845d73063195f1f0e3e328d353df131
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 49b9879a61cc55c6755476159101cb1bb49abb9a4e5cc9ba1988d7c64b610007

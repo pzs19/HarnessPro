@@ -1,0 +1,6 @@
+repository: rvben/rumdl
+commit: 2d75c4d3569bd4061e4621c25e527f106ba65905
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 7c7d5168a4dd2cb059d2d667d76f8bab33bca979d04bc3723dce40ce44cb3c44

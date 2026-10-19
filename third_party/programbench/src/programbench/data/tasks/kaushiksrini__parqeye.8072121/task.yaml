@@ -1,0 +1,6 @@
+repository: kaushiksrini/parqeye
+commit: 8072121de95a2a5ccd052b4049b646d25df0a0cb
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 78d90daae4c1f1b549df73973f1ca41b6ff6cd351da2c17461246128de847661

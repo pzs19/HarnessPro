@@ -1,0 +1,6 @@
+repository: wfxr/code-minimap
+commit: 0ddeea57e06233a9e436d746afc5034aeb04f722
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- b1c0790a7394e68435755f487877512cb9740395010c804e70242f5e8d752bb6

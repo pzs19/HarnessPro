@@ -1,0 +1,6 @@
+repository: jesseduffield/lazygit
+commit: 1d0db51caf3d280a53f027ef049355fc9e0c57e8
+language: go
+difficulty: hard
+eval_clean_hashes:
+- 8f671f19efc6626df5dda1b02448e9d4ac76b92b5b9cce45df61a126a65833f8

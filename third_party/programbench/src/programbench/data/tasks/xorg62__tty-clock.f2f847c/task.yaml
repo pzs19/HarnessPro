@@ -1,0 +1,6 @@
+repository: xorg62/tty-clock
+commit: f2f847cf2cc2949c8a8b7779a778f366d3743474
+language: c
+difficulty: easy
+eval_clean_hashes:
+- cd400708bcd6a5b9dd28bd450a211ec4625cde31470057e9d62f66072e297db0

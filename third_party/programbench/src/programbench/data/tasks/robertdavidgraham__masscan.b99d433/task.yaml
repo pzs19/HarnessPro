@@ -1,0 +1,6 @@
+repository: robertdavidgraham/masscan
+commit: b99d433505f942fb384516553442c15322efc472
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 3c444421cd37c8ca453e5a072c051272fe9383b97b6aad1025c6922ba0c68e51

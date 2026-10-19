@@ -1,0 +1,6 @@
+repository: codesnap-rs/codesnap
+commit: f81e4f3cc1e7db1bd13f4f6ee5bf8f124c3ada9a
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 2ca079e3c6bee0f90a89361cba67bb4e275f4d890c50fa233b14657690b09362

@@ -1,0 +1,6 @@
+repository: tomarrell/wrapcheck
+commit: c058da1005e26566820d7eb858899c280d87eab9
+language: go
+difficulty: medium
+eval_clean_hashes:
+- c9d4823bbf84e47f98b2026947a1d97d686cc1fb8b4647d4dba8428d24df3fae

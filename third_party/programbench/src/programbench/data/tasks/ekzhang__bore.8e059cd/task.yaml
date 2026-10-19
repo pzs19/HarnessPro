@@ -1,0 +1,6 @@
+repository: ekzhang/bore
+commit: 8e059cdaf993d25d92080a2b28a71949a4545d03
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e7464f4078a4be427e752bfdd7aae891f74287fe0afe4c347a31d87b204467ff

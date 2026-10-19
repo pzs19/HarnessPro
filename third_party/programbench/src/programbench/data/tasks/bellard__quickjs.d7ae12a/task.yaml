@@ -1,0 +1,3 @@
+repository: bellard/quickjs
+commit: d7ae12ae71dfd6ab2997527d295014a8996fa0f9
+language: c

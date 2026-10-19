@@ -1,0 +1,6 @@
+repository: cmatsuoka/figlet
+commit: 202a0a8110650a943f1125f536b3bb455cf72ee1
+language: c
+difficulty: easy
+eval_clean_hashes:
+- dd451146b1c0fcc67edf6569cfdc7ab237cc225fec41e6114eb0d759c701204d

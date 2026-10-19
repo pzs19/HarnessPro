@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "default_profile": "balanced",
+  "session_context": "Treat the task as a cleanroom behavioral reconstruction problem. Build an evidence ledger from bundled public documentation and normal black-box interaction, establish a runnable offline-buildable skeleton early, compare candidate and reference on identical discriminating probes, and reserve time for a clean rebuild and representative end-to-end checks.",
+  "codex": {
+    "model_instructions_file": "model_instructions.md",
+    "model_verbosity": "low",
+    "disabled_features": [
+      "apps", "auth_elicitation", "browser_use", "browser_use_external",
+      "browser_use_full_cdp_access", "computer_use", "fast_mode", "goals",
+      "image_generation", "in_app_browser", "multi_agent", "personality",
+      "plugins", "remote_plugin", "shell_snapshot",
+      "skill_mcp_dependency_install", "tool_call_mcp_elicitation",
+      "tool_suggest", "workspace_dependencies"
+    ]
+  },
+  "tool_output": {
+    "history_token_limit": 700,
+    "max_chars": 4500,
+    "head_chars": 2700,
+    "tail_chars": 1100,
+    "rtk_enabled": false
+  },
+  "profiles": {
+    "balanced": {
+      "reasoning_effort": "high",
+      "economy_after_tools": 28,
+      "strict_after_tools": 48,
+      "finalize_after_tools": 56,
+      "strict_reminder_every": 8
+    }
+  },
+  "rules": []
+}

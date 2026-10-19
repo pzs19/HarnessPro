@@ -1,0 +1,6 @@
+repository: peco/peco
+commit: 4e58dad08a7f785b688092e9f166fded2b740129
+language: go
+difficulty: medium
+eval_clean_hashes:
+- ef799b52e5e820c8f91eeeb98fd9a069058101f21ae8ee04cc5763d972a229d8

@@ -1,0 +1,6 @@
+repository: noborus/trdsql
+commit: d8c5ff66ba61b5668d368fbf4315819569e650c9
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 4cfcf9b39e9b0663116da270ada8573acc671fe11348599e6bc58a44c56b4659

@@ -1,0 +1,6 @@
+repository: git-bahn/git-graph
+commit: 87b4473aed75eb908bff600c2e77f1f577b660bb
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f406a9f2246192fed2f4e583a85ee2b07af1aea46edb61fb90dc9e74f5c4b17a

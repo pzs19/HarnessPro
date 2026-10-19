@@ -1,0 +1,6 @@
+repository: danmar/cppcheck
+commit: 0a5b103a7783be2691d162c8613cc4439db0685a
+language: cpp
+difficulty: medium
+eval_clean_hashes:
+- 67f97009ffc841466cd95301073e1804b5ff2c222078f2ef24422f6f62f312e2

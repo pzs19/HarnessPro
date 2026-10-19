@@ -1,0 +1,6 @@
+repository: altdesktop/i3-style
+commit: f93821b239667cb4ecff41e6ad9632da0b5aaa50
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 05a7ef5341ac0a1d437f0b4d547badf376f951cc51578f01a91a279519a8215b

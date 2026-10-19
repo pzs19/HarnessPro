@@ -1,0 +1,6 @@
+repository: Byron/dua-cli
+commit: 8570c1543e3cd0983725f6e1938bf3e73442678a
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 50ddfcf2b47205cbf31aa1c8230a266d33ef522371a9e58a5bc1fad56d0a2e4e

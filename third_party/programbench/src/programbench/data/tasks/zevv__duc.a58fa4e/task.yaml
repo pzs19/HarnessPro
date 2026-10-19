@@ -1,0 +1,6 @@
+repository: zevv/duc
+commit: a58fa4e681c82d59f03cb4fc2d4b450aa62ec142
+language: c
+difficulty: medium
+eval_clean_hashes:
+- b724715fee63228119ea9caeb3f4b436f618d8a8752138a73367063b768d20a2

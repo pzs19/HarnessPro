@@ -1,0 +1,6 @@
+repository: blacknon/hwatch
+commit: edfcb629bea6487880d9b9971814d09702077665
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 04e9012ef5ff966b95f7e8d33f6d3ef7a0c70e444514fc05570c67207971f755

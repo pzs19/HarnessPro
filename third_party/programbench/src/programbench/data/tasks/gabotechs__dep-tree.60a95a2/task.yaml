@@ -1,0 +1,6 @@
+repository: gabotechs/dep-tree
+commit: 60a95a22a06e83a0e65e084a655a3c86fc50dd3f
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 8a127b03fb358c6bef561984731938a3ce60cc3354bb9b5aace6d3ef7b6c68a0

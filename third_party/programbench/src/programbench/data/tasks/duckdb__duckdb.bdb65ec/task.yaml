@@ -1,0 +1,3 @@
+repository: duckdb/duckdb
+commit: bdb65ece8cb0d8686e78b019539652ecd626011a
+language: cpp

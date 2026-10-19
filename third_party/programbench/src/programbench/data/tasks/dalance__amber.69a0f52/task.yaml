@@ -1,0 +1,6 @@
+repository: dalance/amber
+commit: 69a0f52c9688e88a0eb537c2cf17084714eb02e6
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 7a2abc1f8ab4a8ee7d1a362d4e430783c424ba603fe231fa71557708efae9e68

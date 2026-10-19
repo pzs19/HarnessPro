@@ -1,0 +1,6 @@
+repository: jarun/nnn
+commit: cb2c5353dc8130eb533fc96bc4fbcc1be7e8c36b
+language: c
+difficulty: medium
+eval_clean_hashes:
+- e014696296d4d415a13ed2cbd6939e6a0cb142964857da22b08a3ee67bacd9a6

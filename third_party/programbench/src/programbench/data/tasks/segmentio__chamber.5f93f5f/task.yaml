@@ -1,0 +1,6 @@
+repository: segmentio/chamber
+commit: 5f93f5f357740686db56a037935b4dfd9805ca57
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 77f1d290b5d1d201483b042be115e89fb7d2b9b23bdd08708a511842be34c584

@@ -1,0 +1,6 @@
+repository: XAMPPRocky/tokei
+commit: 505d6481c98c9cf411740dcbc6041eca2205cfd7
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- aee46c9ad7c33acc835c295caae8b81f840e195104489d94fba7ce808592fc6f

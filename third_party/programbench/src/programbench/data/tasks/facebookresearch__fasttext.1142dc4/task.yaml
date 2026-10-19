@@ -1,0 +1,3 @@
+repository: facebookresearch/fastText
+commit: 1142dc4c4ecbc19cc16eee5cdd28472e689267e6
+language: cpp

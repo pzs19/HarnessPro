@@ -1,0 +1,6 @@
+repository: ariga/atlas
+commit: 6d81150f68d8477721af321ac3c70a4011ee2d64
+language: go
+difficulty: hard
+eval_clean_hashes:
+- 116cacacf782ebd501c782d9d546985bb0f347040e024e8ce7728fb222e2f06a

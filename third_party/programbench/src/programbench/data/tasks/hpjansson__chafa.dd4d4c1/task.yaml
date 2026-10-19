@@ -1,0 +1,6 @@
+repository: hpjansson/chafa
+commit: dd4d4c1956ba0978eef89b00aa3bfebafc1d9428
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 17fbd0bdb0d40b89847997319199b44b452e9c476796cf5af9c7edfd6853f25d

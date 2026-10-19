@@ -1,0 +1,6 @@
+repository: dundee/gdu
+commit: ede21d2933e3d620566532314d8411c14f4a3be9
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 47c41ab7e8ff7e0b8dcf0e6134670c12ca1b5c38919567202a1471fee5211c40

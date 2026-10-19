@@ -1,0 +1,6 @@
+repository: skeema/skeema
+commit: 6a76243273486259e7add52bc9f6dce236a2f98a
+language: go
+difficulty: hard
+eval_clean_hashes:
+- 074226d3e39a852ad1eddc97817495cf01f21309e8ba710f22de8af8f8b9ab3f

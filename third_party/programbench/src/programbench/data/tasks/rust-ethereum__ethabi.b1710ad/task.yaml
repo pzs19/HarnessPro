@@ -1,0 +1,6 @@
+repository: rust-ethereum/ethabi
+commit: b1710adc18f5b771d2d2519c87248b1ba9430778
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 9939868ed4e8d0f3b24b2b87f54526b00d053d6447e0f9dfc2a9b7b6c417febc

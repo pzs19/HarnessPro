@@ -1,0 +1,6 @@
+repository: trasta298/keifu
+commit: 3331426c9c25c06ad3919602e33586041e45c57b
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 5a9fa8020383b39abc7f530372f409f01b4d0ec3f89926d68492728e2ee26c55

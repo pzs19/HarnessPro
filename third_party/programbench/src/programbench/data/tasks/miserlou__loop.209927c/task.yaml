@@ -1,0 +1,6 @@
+repository: Miserlou/Loop
+commit: 209927c4bd02cc801c336353d8fcea32dfad1fd6
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- c1f712b36db980f69daf4c18fa0516f2663dc9917aae836d0fdc24f45783b395

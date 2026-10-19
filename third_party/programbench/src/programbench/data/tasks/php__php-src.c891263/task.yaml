@@ -1,0 +1,6 @@
+repository: php/php-src
+commit: c8912639008a89a195a258fc8cb924b5763c6766
+language: c
+difficulty: hard
+eval_clean_hashes:
+- bed111b1439403eff4326527a9f141debca86a84d57fecc068fe351bc26bf851

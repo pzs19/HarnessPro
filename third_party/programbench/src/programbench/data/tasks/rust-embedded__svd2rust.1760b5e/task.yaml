@@ -1,0 +1,6 @@
+repository: rust-embedded/svd2rust
+commit: 1760b5e3c812b6edb418f6218222d06ee339c59a
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- c8fb9356ae6571da2859431b401a5a7bf392537ae9e15178f7deeaecf0d4f1fc

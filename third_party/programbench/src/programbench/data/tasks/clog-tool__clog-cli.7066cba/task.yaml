@@ -1,0 +1,6 @@
+repository: clog-tool/clog-cli
+commit: 7066cba2bcbaea0f62ea22c320d48dac20f36a38
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- 8992cdf99f9dc6e1922ae72979042c7dda5b76f37e8c099301c8f8a6f76452e3

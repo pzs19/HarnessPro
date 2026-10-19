@@ -1,0 +1,6 @@
+repository: yassinebridi/serpl
+commit: c48a9d736292e154db5063f32c3e586a33716f22
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 936c8477deeaebb8159a2c4109d139a5df720e4f45cce9ae6355f832907c6a0b

@@ -1,0 +1,6 @@
+repository: Isona/dirble
+commit: e2dea9f16dee2ba208b455f6fa61ca109bf9de2b
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f91362847bed99efb1b2423f79762c8a0b371d81a754e4dbb8f824f5164d4320

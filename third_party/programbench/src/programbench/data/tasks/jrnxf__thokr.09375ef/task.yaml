@@ -1,0 +1,6 @@
+repository: jrnxf/thokr
+commit: 09375efb2e7c7adc1af169c7ee491a443461cefc
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 34aa5eaa60ccff8715a977701da8b5cfa7d8f257844a5437830dd217d422625a

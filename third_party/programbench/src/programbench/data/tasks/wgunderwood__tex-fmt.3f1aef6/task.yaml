@@ -1,0 +1,6 @@
+repository: WGUNDERWOOD/tex-fmt
+commit: 3f1aef6220ba2672352fcf9b687816c46ca22739
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 7ada12e17ade344f5691b22d112623750cfcffc1185594e974ff11623978a138

@@ -1,0 +1,6 @@
+repository: mgdm/htmlq
+commit: 6e31bc814332b2521f0316d0ed9bf0a1c521b6e6
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- b7985a789a31f8939072bd488f2e461e9e35724b2fbee2cf386ef474a41efd4c

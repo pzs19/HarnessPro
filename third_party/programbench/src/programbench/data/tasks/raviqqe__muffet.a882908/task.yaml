@@ -1,0 +1,6 @@
+repository: raviqqe/muffet
+commit: a882908806e6a8b492916265c57162abd5eba0e8
+language: go
+difficulty: medium
+eval_clean_hashes:
+- b2ca782ea836ea8f2d23404598c6a4ceb42ea631e2a3e020ca7ca09a0a974919

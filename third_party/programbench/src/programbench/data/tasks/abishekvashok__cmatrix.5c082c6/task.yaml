@@ -1,0 +1,6 @@
+repository: abishekvashok/cmatrix
+commit: 5c082c64a1296859a11bee60c8c086655953a416
+language: c
+difficulty: easy
+eval_clean_hashes:
+- 776f1c415ab5cb4e73320eb016f8627ae1fc2364c308dace7794989e9fb4a210

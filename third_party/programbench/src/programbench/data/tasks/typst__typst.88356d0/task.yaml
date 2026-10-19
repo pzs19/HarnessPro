@@ -1,0 +1,6 @@
+repository: typst/typst
+commit: 88356d0b708393dc96d8dd6ac88d96cc6e190e06
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 8252dc8ed19ecfdcf92081c7324447b705ad30ae62c7d57c393e60966e518a55

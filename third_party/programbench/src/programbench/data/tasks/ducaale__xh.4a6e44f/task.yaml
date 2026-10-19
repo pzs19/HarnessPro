@@ -1,0 +1,6 @@
+repository: ducaale/xh
+commit: 4a6e44fcb562126959c54ca33b673cf7d707a63e
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 9598c4cdd80ac595e5480764a1bff4f2a609a93c22427c08bb02f122b72538a3

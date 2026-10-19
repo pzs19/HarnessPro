@@ -1,0 +1,6 @@
+repository: elkowar/pipr
+commit: fae0b17f17b9e8cef93609469fc030bb92ea2043
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e695f2632749184df9dd7e96be91e6932a4825295c6ea3694a620895439fc854

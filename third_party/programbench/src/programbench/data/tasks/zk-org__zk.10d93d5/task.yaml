@@ -1,0 +1,6 @@
+repository: zk-org/zk
+commit: 10d93d5d6419941420e7775d409e530a7de59cbc
+language: go
+difficulty: medium
+eval_clean_hashes:
+- a9b1a5c14785241b87a6daa2fe36b53776206db3fc617a4bc8e8a43a1f319a3c

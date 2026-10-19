@@ -1,0 +1,6 @@
+repository: Drew-Alleman/DataSurgeon
+commit: d257ceee6ab40a924fe55b1f2b6a5c18688fe43c
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- 0fad3f3c8c55c98de87355da7bf454a8a5f83ed4c9ce012a389fee75f92d0511

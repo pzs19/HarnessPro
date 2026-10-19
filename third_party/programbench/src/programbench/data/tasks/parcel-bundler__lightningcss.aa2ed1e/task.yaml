@@ -1,0 +1,6 @@
+repository: parcel-bundler/lightningcss
+commit: aa2ed1e3179f4292047608df604ef4c12bab3f80
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 123ed57e7a10218733e76a44a20462286e9c35a3be8bc1fed2bdc6e515bb9c13

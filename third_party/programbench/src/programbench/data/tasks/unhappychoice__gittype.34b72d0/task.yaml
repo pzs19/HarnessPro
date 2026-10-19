@@ -1,0 +1,6 @@
+repository: unhappychoice/gittype
+commit: 34b72d0ede7b1398c982523ab5f4b542cc8fe2f9
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 6c3345ab9a3b7f36c8a7427830191014df720a5d4b2b431934982d403f925a6b

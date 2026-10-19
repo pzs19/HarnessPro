@@ -1,0 +1,6 @@
+repository: ogham/dog
+commit: 721440b12ef01a812abe5dc6ced69af6e221fad5
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- d2da228e60b84455ee6fcce1182d27fca662405e0fcc56b1a285fa3500a8ef92

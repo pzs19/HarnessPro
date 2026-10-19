@@ -1,0 +1,6 @@
+repository: nikolassv/bartib
+commit: 6b9b5ce90d927992164e2faef55bce717b7c3427
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- a8658eff2fef4c4b3c502f0b48922a2acb198a4559d26f953f22b461877fc0d7

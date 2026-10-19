@@ -1,0 +1,6 @@
+repository: rust-lang/mdBook
+commit: 37273ba8e0f86771b02f3a8a4bd3b0b3d388c573
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 5a727dd478395718d5969cad16e9886fcb23391429ffa1c0ad239940356fbe4a

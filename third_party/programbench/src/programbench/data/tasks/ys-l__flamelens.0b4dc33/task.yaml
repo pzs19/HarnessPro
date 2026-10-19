@@ -1,0 +1,6 @@
+repository: YS-L/flamelens
+commit: 0b4dc3331422ffca061be48c2e8b6f4057e48152
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 07e80f0ed55ace5a8284d97894aabc0a5417366d85adb233365a2937a608a130

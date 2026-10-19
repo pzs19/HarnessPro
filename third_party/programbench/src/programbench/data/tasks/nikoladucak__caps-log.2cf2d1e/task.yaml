@@ -1,0 +1,6 @@
+repository: NikolaDucak/caps-log
+commit: 2cf2d1e8ef0c80806799cdc9ce830b5ce169ec60
+language: cpp
+difficulty: medium
+eval_clean_hashes:
+- b51ce78846058777cafdf8fff9280acb7a3e0a5eff01dda36ad0464220374223

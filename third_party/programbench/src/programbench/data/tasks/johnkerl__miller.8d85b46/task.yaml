@@ -1,0 +1,6 @@
+repository: johnkerl/miller
+commit: 8d85b46404a8a6a62c2715d404dfa94bb883775d
+language: go
+difficulty: hard
+eval_clean_hashes:
+- 86fc8c3ec6285115aba5fee4dcd5763bac921a58a0eef418775e9805361e629c

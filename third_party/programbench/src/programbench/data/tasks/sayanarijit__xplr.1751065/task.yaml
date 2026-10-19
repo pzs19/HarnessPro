@@ -1,0 +1,6 @@
+repository: sayanarijit/xplr
+commit: 17510651bde9403ecd3903610c61bec2c3e828ae
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 7faad8569632b1d8a4a049178debfa37eb2476b1be96bd588f66f25a7dbd4acb

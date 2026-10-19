@@ -1,0 +1,6 @@
+repository: cordx56/rustowl
+commit: 655bc5c37e59156954fa9af3e6466602e7dfa814
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 9cc8482d2ecca8afe8ec0fe5e5a9ad9d18ce79a778419119f0956b1c6e807c29

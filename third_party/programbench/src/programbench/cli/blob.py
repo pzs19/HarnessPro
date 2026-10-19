@@ -1,0 +1,32 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+#
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+import typer
+
+app = typer.Typer(
+    name="blob",
+    help="Manage test blob files (downloaded from HuggingFace).",
+    no_args_is_help=True,
+    add_completion=False,
+    context_settings={"help_option_names": ["-h", "--help"]},
+)
+
+
+@app.command()
+def sync(
+    instance_id: str = typer.Argument(None, help="Instance ID to sync (omit for all)"),
+) -> None:
+    """Download blob files from the HuggingFace repo into the local cache."""
+    from programbench.utils.blob_store import get_blob_dir, sync_all
+
+    if instance_id:
+        path = get_blob_dir(instance_id)
+    else:
+        path = sync_all()
+    if path is None:
+        typer.echo("Blob store is disabled (HF_REVISION is empty).")
+        raise typer.Exit(1)
+    typer.echo(f"Blobs cached at {path}")

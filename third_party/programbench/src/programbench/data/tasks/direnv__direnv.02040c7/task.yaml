@@ -1,0 +1,6 @@
+repository: direnv/direnv
+commit: 02040c767ba64b32a9b5ef2d8d2e00983d6bc958
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 192c8bccc1fb988a4bec94e336ff54a1057e8afe74ce78db31fb1b380c16d88d

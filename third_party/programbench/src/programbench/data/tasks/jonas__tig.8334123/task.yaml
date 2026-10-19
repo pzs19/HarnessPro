@@ -1,0 +1,6 @@
+repository: jonas/tig
+commit: 833412390050bd733e89c543944d746343007543
+language: c
+difficulty: medium
+eval_clean_hashes:
+- fb6450f2c6e27f07c309c639525b29e2f76fb7b6c02ee84cb2ea9750fb0cb850

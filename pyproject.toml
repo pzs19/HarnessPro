@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harnesspro-evaluation"
+version = "0.1.0"
+description = "Evaluation runners for the released HarnessPro harness artifacts"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "datacurve-pier",
+  "datasets>=2.14.0",
+  "httpx>=0.28.0",
+  "openai>=1.52.0",
+  "programbench",
+  "pyyaml>=6.0",
+]
+
+[tool.uv.sources]
+datacurve-pier = { path = "third_party/pier", editable = true }
+programbench = { path = "third_party/programbench", editable = true }
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

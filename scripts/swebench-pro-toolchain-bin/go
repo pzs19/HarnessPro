@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Keep dependency transport reproducible when tasks set GOPROXY themselves.
+wrapper_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+repo_dir=$(cd -- "$wrapper_dir/../.." && pwd)
+toolchain_root=${RHO_GO_TOOLCHAIN_ROOT:-"$repo_dir/third_party/toolchains"}
+real_go=${RHO_REAL_GO:-"$toolchain_root/go/bin/go"}
+selected_version=${RHO_GO_TOOLCHAIN_VERSION:-}
+selected_version=${selected_version#go}
+if [[ -n "$selected_version" ]]; then
+  selected_go="$toolchain_root/go$selected_version/bin/go"
+  if [[ ! -x "$selected_go" ]]; then
+    echo "SWE-bench Pro Go wrapper: official-image toolchain not installed: $selected_go" >&2
+    exit 127
+  fi
+  real_go=$selected_go
+fi
+
+if [[ ! -x "$real_go" ]]; then
+  echo "SWE-bench Pro Go wrapper: executable not found: $real_go" >&2
+  exit 127
+fi
+
+export GOPROXY=${RHO_GOPROXY_CHAIN:-"https://goproxy.cn|https://mirrors.aliyun.com/goproxy/|https://goproxy.io|direct"}
+export GOSUMDB=${RHO_GOSUMDB:-sum.golang.org}
+export GOTOOLCHAIN=${RHO_GOTOOLCHAIN:-local}
+
+exec "$real_go" "$@"

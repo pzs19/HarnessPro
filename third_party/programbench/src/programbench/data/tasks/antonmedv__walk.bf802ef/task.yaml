@@ -1,0 +1,6 @@
+repository: antonmedv/walk
+commit: bf802ef9ee4b7895f88316138372b8356ad7afdb
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 8cf9b140fa899a187c2830841e701b7a94e379bdfa2cc8b9a51adf542778325c

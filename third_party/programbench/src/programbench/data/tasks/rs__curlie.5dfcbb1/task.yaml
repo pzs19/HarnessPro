@@ -1,0 +1,6 @@
+repository: rs/curlie
+commit: 5dfcbb17ea673b66a3faab66d2ff5f24145f45a8
+language: go
+difficulty: easy
+eval_clean_hashes:
+- e7e4f84ba194306ef782853d8b77788dd4674a6baad19c878885bb08c2db0d35

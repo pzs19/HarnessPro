@@ -1,0 +1,6 @@
+repository: LuaJIT/LuaJIT
+commit: a553b3de243b1ae07bdb21da4bdab77148793f76
+language: c
+difficulty: medium
+eval_clean_hashes:
+- a46fdc84f8d97b05fac8b4ac241bce8216a686ed52267f12f620c14bb50e88fc

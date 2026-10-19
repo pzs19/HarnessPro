@@ -1,0 +1,6 @@
+repository: Canop/rhit
+commit: ae90bcb7bac7a3558dfad90b3e97d8a1955f18dd
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- a21d649771dad84e9f8d076d24f6237d76cdcab5cd9b69284ce722aaaff869ea

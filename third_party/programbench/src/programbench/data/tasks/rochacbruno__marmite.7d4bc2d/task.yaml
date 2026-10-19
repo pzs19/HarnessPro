@@ -1,0 +1,6 @@
+repository: rochacbruno/marmite
+commit: 7d4bc2d9d97f6dedd735892c3c7e80a53b5718d7
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 7a694c93315964be722cf6b4f4e2c0f732e17245aad95b36cacf2e219e024eb4

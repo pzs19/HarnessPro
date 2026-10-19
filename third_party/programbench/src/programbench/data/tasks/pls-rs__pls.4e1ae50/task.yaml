@@ -1,0 +1,6 @@
+repository: pls-rs/pls
+commit: 4e1ae500be8e81ce1d013b7e9b56c5b70354843b
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 8a74a0c344ea83a0db469cd8bd7f1dd4eac7ba8bd135c178585b9cf516d20e28

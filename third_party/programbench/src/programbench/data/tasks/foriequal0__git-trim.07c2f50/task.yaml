@@ -1,0 +1,6 @@
+repository: foriequal0/git-trim
+commit: 07c2f508308a4a59dfb333969518d02f8e328983
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- d872e77a10fcfbedc534fc32cd84731cc6fd1213fb0d4c230c103ef500177147

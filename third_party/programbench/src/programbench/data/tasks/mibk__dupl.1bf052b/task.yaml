@@ -1,0 +1,6 @@
+repository: mibk/dupl
+commit: 1bf052b6e6431cb666549323351baf3b2aa741e4
+language: go
+difficulty: easy
+eval_clean_hashes:
+- eefa7175d91c59c1e305e3d4e84ca46fbb3a65b715d2a4436ebfa3ba2f1fe9f4

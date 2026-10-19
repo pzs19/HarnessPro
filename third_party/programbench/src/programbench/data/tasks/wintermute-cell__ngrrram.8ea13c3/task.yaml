@@ -1,0 +1,6 @@
+repository: wintermute-cell/ngrrram
+commit: 8ea13c31a2758eba37ea5a58d45915d9ca43834e
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- 76c0c98b1ec3165b826ee40f73fbf7406f1bd8e054f48bcc139242b36b96ff6e

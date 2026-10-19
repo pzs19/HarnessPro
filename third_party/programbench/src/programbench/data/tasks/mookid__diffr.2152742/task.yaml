@@ -1,0 +1,6 @@
+repository: mookid/diffr
+commit: 2152742e90520c5be32fbec3fbbfe670f3b7929b
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 7e458441195a4027d8993abdec026f65d6e5929dabf2e3a5aeb18664c94c29b5

@@ -1,0 +1,6 @@
+repository: konradsz/igrep
+commit: aa756303e3ce8c271e15db0c585e23fd9a841829
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- b711b07750c89fe216d978499c0ab82cf67f5066b315a88915eae5366c81b38b

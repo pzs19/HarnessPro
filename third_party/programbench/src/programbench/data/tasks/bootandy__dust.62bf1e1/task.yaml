@@ -1,0 +1,6 @@
+repository: bootandy/dust
+commit: 62bf1e14de73b14bdf5c691be29e6dcc4de352aa
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 49dc6200ab5e315f783f7ad3f7a7af4d758b49053bccc689b8ff33b3d0613f4c

@@ -1,0 +1,6 @@
+repository: simeg/eureka
+commit: df3796c4b65302f93b338d46ed576e61d75b0b45
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 1528514451c30447e93bc97bcda65118325cf80ceb92687716135f3ce12937aa

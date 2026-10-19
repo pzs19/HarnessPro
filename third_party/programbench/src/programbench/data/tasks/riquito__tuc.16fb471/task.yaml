@@ -1,0 +1,6 @@
+repository: riquito/tuc
+commit: 16fb471108af4be9f950bc2c2f4b81bd81425d2f
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 6638abec3b957513a611a1725d4fe795e999ef4acefbfd2598eef9161aee922b

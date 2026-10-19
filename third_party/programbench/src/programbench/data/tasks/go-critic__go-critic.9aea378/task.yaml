@@ -1,0 +1,6 @@
+repository: go-critic/go-critic
+commit: 9aea378c4dccd6f4394196ad8f0873b3e84678c8
+language: go
+difficulty: medium
+eval_clean_hashes:
+- ea19af9a18ecb6b051f54fe22328c0ac5e67f0cbf3633e984b92b0784e5463cf

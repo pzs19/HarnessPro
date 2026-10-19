@@ -1,0 +1,6 @@
+repository: yoav-lavi/melody
+commit: f4af9b4829555fedb687eb5f6f5755ce3c5ef738
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 0417aa95aa4732a732079df8c08ff0dfd8038867dc4894ea21488c49d7cfce03

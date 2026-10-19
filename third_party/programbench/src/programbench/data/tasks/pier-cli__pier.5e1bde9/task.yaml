@@ -1,0 +1,6 @@
+repository: pier-cli/pier
+commit: 5e1bde983cb7d5ae2c8d2c4568be9faf5aece3d5
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 0abe2c8a0d566e7b93a7958a89ceb3ea3d3cd369e32cf8c2e7a0e1f703464988

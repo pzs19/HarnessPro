@@ -1,0 +1,6 @@
+repository: ecumene/rust-sloth
+commit: 051c5599bb49a2504789ea92c884b988d85e816d
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 0fa1ffd63a4c3aea734c3b68be2916ee610a6642fa5a7df343d8ee37d1308192

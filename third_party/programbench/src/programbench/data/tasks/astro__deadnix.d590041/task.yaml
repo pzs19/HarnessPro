@@ -1,0 +1,6 @@
+repository: astro/deadnix
+commit: d590041677add62267bef35ddec63cd9402d3505
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 6830274e43aee25ec209852f2cde31cff5246a3423d9f92e92f437970b2ab593

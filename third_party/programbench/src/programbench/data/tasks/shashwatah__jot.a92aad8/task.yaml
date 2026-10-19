@@ -1,0 +1,6 @@
+repository: shashwatah/jot
+commit: a92aad895b0e41971a97159be174334aab2826a9
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- cda9ecdd140675f8deae07452dd339da80dbd1c0d2d76c038c13e2a5e12665a8

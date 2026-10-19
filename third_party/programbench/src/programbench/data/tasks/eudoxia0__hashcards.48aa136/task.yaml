@@ -1,0 +1,6 @@
+repository: eudoxia0/hashcards
+commit: 48aa1367ae992fcf849c5eceb4ada3b9936f5e0e
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 77f137ff9541d20b94f544e55f5f974c7bcb7d979eca2e2adf864504fb435ba6

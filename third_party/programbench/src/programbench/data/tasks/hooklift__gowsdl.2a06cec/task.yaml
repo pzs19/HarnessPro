@@ -1,0 +1,6 @@
+repository: hooklift/gowsdl
+commit: 2a06cec86c50a61d8b43fae529174ef340bc9c34
+language: go
+difficulty: medium
+eval_clean_hashes:
+- a99e4951d8e1c8583cb76c6c104e014e0b17dabafb7db27ca9acea9461a08ce8

@@ -1,0 +1,6 @@
+repository: lz4/lz4
+commit: 1519f46a3a11f312be8f5796e8fa4779140277f0
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 39482b2512114fc5e593949649b644a0eb9f10856baf8e579deb4e7a6161cefc

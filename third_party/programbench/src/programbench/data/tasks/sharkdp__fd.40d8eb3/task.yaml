@@ -1,0 +1,6 @@
+repository: sharkdp/fd
+commit: 40d8eb30bcade65942308262a1f41a1b7847a1fe
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- ada69f5d0a8f9a7d67296bb9697e1802c9a8628d8bd44a84e777f6f954dc8c37

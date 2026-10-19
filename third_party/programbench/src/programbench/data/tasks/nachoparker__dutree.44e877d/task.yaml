@@ -1,0 +1,6 @@
+repository: nachoparker/dutree
+commit: 44e877d148f29ae68e44b5553018f2096087d90b
+language: rs
+difficulty: easy
+eval_clean_hashes:
+- 1d9809a271f90e1486546247c468931198da8c6073fa044a8ff133143e8e002b

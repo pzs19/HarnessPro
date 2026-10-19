@@ -1,0 +1,6 @@
+repository: junegunn/fzf
+commit: b56d614ba2f901c64eed454f181badec0b1cedff
+language: go
+difficulty: medium
+eval_clean_hashes:
+- e7bb2bf1ce725fe3de36d65078fa3110475f79712da030dd327fbd8630bb8b87

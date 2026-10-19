@@ -1,0 +1,6 @@
+repository: bensadeh/tailspin
+commit: 6278437c3d28f2e95201f3b0c8a471b8668eed5b
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- d8a74a5b1149aff83043896fdeeaaff8ffb36f879b3ee5af31b1d6fb207192ae

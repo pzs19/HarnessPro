@@ -1,0 +1,6 @@
+repository: sibprogrammer/xq
+commit: b89f6811d339cc491293c4147e13bb74324d49c5
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 232f15fa8b6fc4594b301e3fc14ab3e78065bf23aa7b0785cbd44a306051b950

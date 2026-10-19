@@ -1,0 +1,4 @@
+repository: FFmpeg/FFmpeg
+commit: 360a4025fb2582d52d871ea2129d6b659598bb49
+language: c
+difficulty: hard

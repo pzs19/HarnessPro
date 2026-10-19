@@ -1,0 +1,6 @@
+repository: stacked-git/stgit
+commit: 430027d67dda84b21fb892660cdbcdaed3bf2a08
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- c1c0ddda520581a0e15ca9ba13181290c0584702819585682e8fd19f15dc521c

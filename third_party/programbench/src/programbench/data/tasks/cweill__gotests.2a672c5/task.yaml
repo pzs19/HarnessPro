@@ -1,0 +1,6 @@
+repository: cweill/gotests
+commit: 2a672c523b4cb46a6dc7d04ab05fa0f4be72aade
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 78f5a9425a6867739c7f8aa7bc2a5d9058bae9a684149667da07e194b35aebdb

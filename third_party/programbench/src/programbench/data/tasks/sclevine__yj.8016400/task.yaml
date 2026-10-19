@@ -1,0 +1,6 @@
+repository: sclevine/yj
+commit: 80164002c0d7f88aa58fa5bec8a8cf4f1bb4e93b
+language: go
+difficulty: easy
+eval_clean_hashes:
+- 58174833025a6ceb4c124ceb281fc23da0da45b62356b4f87e7136ee3a14451c

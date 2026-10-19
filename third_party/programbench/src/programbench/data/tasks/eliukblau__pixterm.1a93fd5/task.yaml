@@ -1,0 +1,6 @@
+repository: eliukblau/pixterm
+commit: 1a93fd59271c8b11e2b4971e2fdebe3634fe46b9
+language: go
+difficulty: easy
+eval_clean_hashes:
+- ce3ca3b31f37c0334db3f836f4bd848ffe2d2a553e1c2bf3f465b7fc6f6511c0

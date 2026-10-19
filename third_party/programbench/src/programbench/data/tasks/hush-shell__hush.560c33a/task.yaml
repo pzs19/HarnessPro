@@ -1,0 +1,6 @@
+repository: hush-shell/hush
+commit: 560c33a2dc8bf967b4fb0c80e3f18ca8934615ff
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f036d5a688fcbc210730071f3b5791fdfc64af3723931eda07c2a9c050aca7c9

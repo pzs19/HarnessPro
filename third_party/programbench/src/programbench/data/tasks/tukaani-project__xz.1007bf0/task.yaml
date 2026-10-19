@@ -1,0 +1,6 @@
+repository: tukaani-project/xz
+commit: 1007bf08b5fddf088b3131e692210af4b4b7fd8c
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 40acc91528155a61364fb295efc7d4dadb042d3e187cec95096a6d62d2585f26

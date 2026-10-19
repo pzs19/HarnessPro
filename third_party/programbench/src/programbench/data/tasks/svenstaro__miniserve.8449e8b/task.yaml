@@ -1,0 +1,6 @@
+repository: svenstaro/miniserve
+commit: 8449e8b118ffd61de8df970b56b0796f891e3697
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- 3c205d4e64b02fe2a42102572db8142e55788a0e10c01c0c987ff39d57dfcefc

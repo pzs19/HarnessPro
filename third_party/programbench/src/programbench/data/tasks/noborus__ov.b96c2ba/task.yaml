@@ -1,0 +1,6 @@
+repository: noborus/ov
+commit: b96c2ba0c9c9e08ea036676d873de8cb45cd52b9
+language: go
+difficulty: medium
+eval_clean_hashes:
+- 1ae60e06e5cc8e795b9f0b4d15117ad6d193b2eaf64b13da7dcfea46aef73378

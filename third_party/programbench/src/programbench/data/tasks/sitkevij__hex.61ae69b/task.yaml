@@ -1,0 +1,6 @@
+repository: sitkevij/hex
+commit: 61ae69b85a4807382b4d9bb1b1f711b20a8d8ce2
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f1baacf858012c184a7b61935e9b06257170024d70959f12af41c95d4e04dc3e

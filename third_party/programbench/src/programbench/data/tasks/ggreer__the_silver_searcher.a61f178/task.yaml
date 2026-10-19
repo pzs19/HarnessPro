@@ -1,0 +1,6 @@
+repository: ggreer/the_silver_searcher
+commit: a61f1780b64266587e7bc30f0f5f71c6cca97c0f
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 07ae1b9a4e4943556996b3917b0bba5a43dedea19c738c274d9beb58cb4ed561

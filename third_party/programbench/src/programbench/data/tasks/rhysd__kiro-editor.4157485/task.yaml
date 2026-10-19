@@ -1,0 +1,6 @@
+repository: rhysd/kiro-editor
+commit: 41574855cd745db168aeb3533921c1be00fd203d
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e2b69d9e89bb10b94e3603c2cf605f778fe50cc4392af76cf2a4987d70022b08

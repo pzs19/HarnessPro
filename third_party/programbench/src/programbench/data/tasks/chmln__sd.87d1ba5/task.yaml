@@ -1,0 +1,6 @@
+repository: chmln/sd
+commit: 87d1ba5b3401329a07c1874e49a822026e1cbf3f
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- e306423190c8414645ee6f616cdee5b43d40a8740e7209a071c6f42851b090b9

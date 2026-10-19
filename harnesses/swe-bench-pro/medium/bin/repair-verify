@@ -1,0 +1,171 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage: repair-verify [repo] [--clean-pycache] [-- extra command...]
+
+Runs cheap, task-agnostic verification helpers from inside a repair workspace:
+  - discovers tools from PATH and optional toolchain directories
+  - runs git diff --check when the repo is a git worktree
+  - runs cheap syntax/package checks when obvious source files exist
+  - reports generated artifacts that should usually be removed
+  - optionally runs one extra task-specific command
+
+Examples:
+  harness/bin/repair-verify repo
+  harness/bin/repair-verify repo -- go test ./lib/events ./lib/service
+  harness/bin/repair-verify repo --clean-pycache -- python -m compileall -q lib
+EOF
+}
+
+repo="repo"
+clean_pycache=0
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --help|-h)
+      usage
+      exit 0
+      ;;
+    --clean-pycache)
+      clean_pycache=1
+      shift
+      ;;
+    --)
+      shift
+      break
+      ;;
+    -*)
+      echo "unknown option: $1" >&2
+      usage >&2
+      exit 2
+      ;;
+    *)
+      repo="$1"
+      shift
+      ;;
+  esac
+done
+
+if [[ ! -d "$repo" ]]; then
+  echo "repo directory not found: $repo" >&2
+  exit 2
+fi
+
+cd "$repo"
+
+find_tool() {
+  local name="$1"
+  shift
+  if command -v "$name" >/dev/null 2>&1; then
+    command -v "$name"
+    return 0
+  fi
+  for candidate in "$@"; do
+    if [[ -n "$candidate" && -x "$candidate" ]]; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+  local tool_dir
+  local -a extra_tool_dirs=()
+  IFS=: read -r -a extra_tool_dirs <<< "${RHO_EXTRA_TOOL_DIRS:-}"
+  for tool_dir in "${extra_tool_dirs[@]}"; do
+    if [[ -n "$tool_dir" && -x "$tool_dir/$name" ]]; then
+      printf '%s\n' "$tool_dir/$name"
+      return 0
+    fi
+  done
+  return 1
+}
+
+go_bin="$(find_tool go "${GOROOT:+$GOROOT/bin/go}" "${GOPATH:+$GOPATH/bin/go}" || true)"
+gofmt_bin="$(find_tool gofmt "${GOROOT:+$GOROOT/bin/gofmt}" "${GOPATH:+$GOPATH/bin/gofmt}" || true)"
+python_bin="$(find_tool python3 || find_tool python || true)"
+node_bin="$(find_tool node || true)"
+
+echo "== discovered tools =="
+echo "go: ${go_bin:-not found}"
+echo "gofmt: ${gofmt_bin:-not found}"
+echo "python: ${python_bin:-not found}"
+echo "node: ${node_bin:-not found}"
+
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo
+  echo "== git diff check =="
+  git diff --check
+fi
+
+if [[ -n "$gofmt_bin" ]] && find . -path ./.git -prune -o -name '*.go' -print -quit | grep -q .; then
+  echo
+  echo "== gofmt check =="
+  unformatted="$("$gofmt_bin" -l $(find . -path ./.git -prune -o -name '*.go' -print))"
+  if [[ -n "$unformatted" ]]; then
+    echo "$unformatted"
+    echo "gofmt check failed: run gofmt on the files above" >&2
+    exit 1
+  fi
+fi
+
+if [[ -n "$go_bin" && -f go.mod ]]; then
+  echo
+  echo "== go package list =="
+  "$go_bin" list ./... >/dev/null
+fi
+
+if [[ -n "$python_bin" ]] && find . -path ./.git -prune -o -name '*.py' -print -quit | grep -q .; then
+  echo
+  echo "== python compile touched files =="
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    mapfile -t py_files < <(git diff --name-only --diff-filter=ACMR -- '*.py')
+    if [[ ${#py_files[@]} -gt 0 ]]; then
+      "$python_bin" -m py_compile "${py_files[@]}"
+    else
+      echo "no changed Python files"
+    fi
+  else
+    echo "not a git worktree; skipping touched-file compile"
+  fi
+fi
+
+if [[ -n "$node_bin" ]] && git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  mapfile -t js_files < <(git diff --name-only --diff-filter=ACMR -- '*.js' '*.cjs' '*.mjs')
+  if [[ ${#js_files[@]} -gt 0 ]]; then
+    echo
+    echo "== node syntax touched js files =="
+    for file in "${js_files[@]}"; do
+      "$node_bin" --check "$file"
+    done
+  fi
+fi
+
+if [[ $# -gt 0 ]]; then
+  echo
+  echo "== extra command =="
+  "$@"
+fi
+
+if [[ "$clean_pycache" -eq 1 ]]; then
+  echo
+  echo "== cleaning python caches =="
+  find . \( -type d -name __pycache__ -o -type d -name .pytest_cache \) -prune -exec rm -rf {} +
+  find . -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete
+fi
+
+echo
+echo "== generated artifact scan =="
+find . \
+  -path ./.git -prune -o \
+  \( -type d \( -name __pycache__ -o -name .pytest_cache -o -name .mypy_cache -o -name .tox -o -name node_modules -o -name .nyc_output -o -name coverage \) \
+  -o -type f \( -name '*.pyc' -o -name '*.pyo' -o -name '*.profraw' -o -name '*.test' \) \) \
+  -print | sed -n 's#^\./##;1,200p'
+
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo
+  echo "== worktree status =="
+  git status --short --untracked-files=all
+fi
+
+echo
+echo "Reminder: run a direct smoke for the prompt contract: public API shape, negative paths, named backends/platforms, and boundary cases."

@@ -1,0 +1,6 @@
+repository: lua/lua
+commit: c6b484823806e08e1756b1a6066a3ace6f080fae
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 46d302c1de7129b3d29763c94dee7c8aff2ce91ce679043fb847c249475ad5c8

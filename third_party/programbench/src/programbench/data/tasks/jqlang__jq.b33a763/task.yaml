@@ -1,0 +1,6 @@
+repository: jqlang/jq
+commit: b33a7634ba34ffa7ce7368cc0ebf5ca40b54c7e6
+language: c
+difficulty: medium
+eval_clean_hashes:
+- 6ca182a6c27d6e7081f23fc70d09a6030f05dab810504644c0bd3ff3869f12b6

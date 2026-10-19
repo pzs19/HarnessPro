@@ -1,0 +1,6 @@
+repository: o2sh/onefetch
+commit: e5958cec1e5d17d72405f1c96cf30ae1e2defa16
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- f7575b3db03cdfea674563ab0e5bea842e896f21145a96a8d4ec41293605f66a

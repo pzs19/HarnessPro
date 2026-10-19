@@ -1,0 +1,6 @@
+repository: Canop/broot
+commit: d6c798edbd136dbe5b67566ad74a7daa97e8ae49
+language: rs
+difficulty: hard
+eval_clean_hashes:
+- 28ee428f75efe2058e87c6ae39fbfee0f1bfc9fa5a51464826cf868ceb982285

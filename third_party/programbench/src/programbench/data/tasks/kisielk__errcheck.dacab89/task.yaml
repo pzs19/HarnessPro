@@ -1,0 +1,6 @@
+repository: kisielk/errcheck
+commit: dacab891ef4a1c38ecf6c4d94fd66746bb1247d5
+language: go
+difficulty: easy
+eval_clean_hashes:
+- 296c10882ce659f773095e0d57cb517fcc0f8737044a24e6557231dd1f9da39b

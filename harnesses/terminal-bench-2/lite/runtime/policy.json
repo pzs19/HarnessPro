@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "default_profile": "standard",
+  "session_context": "Harness guidance is already loaded; do not inventory harness/. Extract exact artifacts, paths, behavior, integrity restrictions, public interfaces, and final state from task/prompt.md. Use its host-to-container pattern. For black-box work use only public interfaces and implement general behavior. When the task names an API, wrapper, package, revision, runtime, or service, exercise that named interface first and do not silently replace it with a lower-level dependency, mock, proxy, or look-alike behavior; inspect the public signature or implementation after an interface error. A source-only or single-artifact deliverable should not acquire undeclared runtime helpers. Start with the smallest discriminating probe and batch independent checks. Bound downloads, external interaction, and potentially blocking commands well below the task watchdog; reserve time for final repair and verification. Validate requested behavior, not only superficial readiness signals. Run mutating workflow checks on disposable fixtures when possible; if the user is meant to perform the same workflow later, do not leave test data or state that collides with its documented preconditions. Preserve the real requested implementation and durable service state while removing only temporary verification artifacts. For quantitative work, identify units, variables, invariants, and the comparison objective before optimizing; exercise every publicly stated correctness dimension using a direct reference or invariant when one can be constructed. Keep temporary verification artifacts separate from final deliverables. Before finishing, compare exact contents and state with every explicit requirement. Avoid narration and unchanged rereads; do not skip necessary validation.",
+  "codex": {
+    "model_instructions_file": "model_instructions.md",
+    "model_verbosity": "low",
+    "disabled_features": [
+      "apps",
+      "auth_elicitation",
+      "browser_use",
+      "browser_use_external",
+      "browser_use_full_cdp_access",
+      "computer_use",
+      "fast_mode",
+      "goals",
+      "image_generation",
+      "in_app_browser",
+      "multi_agent",
+      "personality",
+      "plugins",
+      "remote_plugin",
+      "shell_snapshot",
+      "skill_mcp_dependency_install",
+      "tool_call_mcp_elicitation",
+      "tool_suggest",
+      "workspace_dependencies"
+    ]
+  },
+  "tool_output": {
+    "history_token_limit": 900,
+    "max_chars": 4000,
+    "head_chars": 2400,
+    "tail_chars": 900,
+    "rtk_enabled": true
+  },
+  "profiles": {
+    "compact": {
+      "reasoning_effort": "low",
+      "economy_after_tools": 2,
+      "strict_after_tools": 4,
+      "finalize_after_tools": 8,
+      "strict_reminder_every": 2
+    },
+    "lean": {
+      "reasoning_effort": "low",
+      "economy_after_tools": 6,
+      "strict_after_tools": 10,
+      "finalize_after_tools": 16,
+      "strict_reminder_every": 4
+    },
+    "standard": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 14,
+      "strict_after_tools": 26,
+      "finalize_after_tools": 38,
+      "strict_reminder_every": 8
+    },
+    "deep": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 16,
+      "strict_after_tools": 30,
+      "finalize_after_tools": 48,
+      "strict_reminder_every": 8
+    },
+    "research": {
+      "reasoning_effort": "medium",
+      "economy_after_tools": 8,
+      "strict_after_tools": 20,
+      "finalize_after_tools": 40,
+      "strict_reminder_every": 6
+    }
+  },
+  "classifier": {
+    "type": "model",
+    "model": "gpt-5.5",
+    "reasoning_effort": "medium",
+    "transport": "responses",
+    "fallback_profile": "standard",
+    "rubric_file": "profile_rubric.md",
+    "timeout_s": 120,
+    "max_attempts": 3,
+    "max_output_tokens": 2048,
+    "samples": 1,
+    "max_task_chars": 24000
+  },
+  "confidence_overrides": [],
+  "rules": []
+}

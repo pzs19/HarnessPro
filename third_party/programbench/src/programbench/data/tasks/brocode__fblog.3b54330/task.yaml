@@ -1,0 +1,6 @@
+repository: brocode/fblog
+commit: 3b5433063f92647b46d54610b89723453159bbf4
+language: rs
+difficulty: medium
+eval_clean_hashes:
+- aadfc28bdd1eb63dfc08b8ede5bd8ad73aa60ca1b664dfd28f13bdade7146a54
